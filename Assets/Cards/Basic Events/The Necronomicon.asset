@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d007d0d8b16001a4f9a117a815a2f55d, type: 3}
+  m_Name: The Necronomicon
+  m_EditorClassIdentifier: 
+  eventSprite: {fileID: 1752371674, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
+  weight: 14
+  recurring: 0
+  option1:
+    exists: 1
+    description: Learn the ways of darkness
+    cost: 
+    reward: 0000000001000000
+    result: Insert x3 'Reading the Necronomicon'
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: cfc5bc87eb131364f830335197088e21, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option2:
+    exists: 0
+    description: 
+    cost: 
+    reward: 
+    result: 
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 0
+      specialEffect: {fileID: 0}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option3:
+    exists: 1
+    description: It is too dangerous
+    cost: 
+    reward: 
+    result: 
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 0
+      specialEffect: {fileID: 0}
+      usesCustomOption: 0
+      customOption: {fileID: 0}

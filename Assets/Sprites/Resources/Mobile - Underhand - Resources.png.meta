@@ -1,0 +1,2799 @@
+fileFormatVersion: 2
+guid: 84b38c26a626427459f7f1e9b0f93fc8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2866
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ffc9cd915f4b54dbf7f144f1bacdbe
+      internalID: 1196140439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_1
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 2866
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710f74424065aca438e46f3b8d9c5e83
+      internalID: -74667848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_2
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2866
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226efc865f138194b9208fa506e0454c
+      internalID: 2092675672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_3
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 2866
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53176d1e9c9bcc340b00f211836bc825
+      internalID: -1341795792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_4
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 2866
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2110276737d1db34cafd362af8782be4
+      internalID: -168250918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_5
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 2866
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec0f9658685cab4eb77b12164b84555
+      internalID: -954343746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_6
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 2866
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ca774dd7375374c96351e253ad70f4
+      internalID: 1621714142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_7
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2866
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e84802ac93d5104bb1877613ca5d51f
+      internalID: 1559186775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_8
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 2866
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4493eb376cf01c249b3ef696ba81d69e
+      internalID: -1260931268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_9
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 2866
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbae647300b1a14fb032345981bdcf7
+      internalID: -282713634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2606
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1316df020fa43146b68a3a9e3a88cba
+      internalID: 871377489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_11
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 2606
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a552dfdac878c4eb4e8a19ee800868
+      internalID: -359816641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_12
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2606
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4127408c114d8409fe692a99cf912b
+      internalID: -1675007575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_13
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 2605
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563d64452c911164ca1a2ddd94d84908
+      internalID: -106628634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_14
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 2606
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee398e1b544eda4a8ad434162bd3d1e
+      internalID: 2083346474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_15
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 2606
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4aba5bc637c4814783b9746aa13e528
+      internalID: 411495278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_16
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 2606
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aecb06ed1556ec4f95190ba818e6f0e
+      internalID: 434031589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_17
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2606
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43f55b9fe337124ab17311f91b7942f
+      internalID: 1582318589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_18
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 2606
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258ffb4df6e9ae04384e2e385ae8811b
+      internalID: -2096729281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_19
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 2606
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f70c3cb96f36c04dbab64ddf4ecda98
+      internalID: 2097196944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2345
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711834586a6b88640a78e87b4e4059bc
+      internalID: -805015151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_21
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 2345
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c348ea1dce25494d8673682a0fff086
+      internalID: 1015382423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_22
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2345
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6048f45d8364e4babdb5dbf6369a8c
+      internalID: 895854197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_23
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 2345
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cfd4b005e8fc342911f769b3785fa8
+      internalID: 1439688500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_24
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 2347
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15b1dba321e3f644b72027fb497cbe4
+      internalID: 1982127909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_25
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 2347
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dedfc226d373404588ca3fbc2396de3
+      internalID: -1248216214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_26
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 2347
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5c213eb8febf74a9cbc1b938ceab4a
+      internalID: 1845172141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_27
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 2347
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53eefd8ae4054894db6e5b01eeca4cd6
+      internalID: 1244857880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_28
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 2347
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd4dab700b8add44b9e4013710ec9bc
+      internalID: 1122965495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_29
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 2347
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c058a0b63a4a9a4aa172e5ea436469d
+      internalID: 489013632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2085
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe5a94638adfa447a1e8a7531dfc36c
+      internalID: 616437853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_31
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 2085
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7159515655cffd7469368f30799b9cd1
+      internalID: -717099481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_32
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2085
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10338e8f872e099469640dda2f983dae
+      internalID: 130352969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_33
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 2085
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fb5f65379012c4eb81f4f3c63a7457
+      internalID: 731967086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_34
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 2085
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8000891db441d418a7bd76a75181eb
+      internalID: -2027669898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_35
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 2085
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f4643bd32a9bb43aefc2d855df63a9
+      internalID: 439238270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_36
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 2085
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96959c420f60064aa6c4cc94711e160
+      internalID: 469970175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_37
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2085
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1889b97b71b657948b0a86fa7d8c423f
+      internalID: 774667573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_38
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 2085
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e2dc02abc4ecb44ad634847fd05936
+      internalID: 87805583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_39
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 2085
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3e1720c33135c4c97c15e030356a9e
+      internalID: -1530997526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1824
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1549a82bceec6654ab11aaa30183b725
+      internalID: 1506648139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_41
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1827
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656081279b3b08145a83eaf4ce41eabf
+      internalID: -1786556438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_42
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1827
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6932b99488bb84d4a9e24f672c910184
+      internalID: -1917407882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_43
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1827
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f24cb4a698e5b4f9ce2d065c02846e
+      internalID: 351396125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_44
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1827
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b30f5f22327ad49bc562a09c57547a
+      internalID: -116104109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_45
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 1827
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235916dca4ee55d4c8d3a0145a8509c1
+      internalID: -1780936327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_46
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1827
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9122b23c1cfd10a428b8722b1a2726bb
+      internalID: 1232656031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_47
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 1827
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e552d81cf7daa04d850d5ae29ab5870
+      internalID: -1719766474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_48
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 1827
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a9f0bbf7e654a4c808166e5eca3798
+      internalID: -1953154819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_49
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 1827
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6818a287ad849bc4f9425b6902aa96f1
+      internalID: -351346305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1564
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30824a37b6f92104aaaabdd8032b0d12
+      internalID: 1497657422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_51
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1564
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d09a8e1137c8b94f816c230dfb84b36
+      internalID: -2069795734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_52
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1564
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a971896961031ed4bb25d0dc3939b826
+      internalID: 1893731088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_53
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1564
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a4f0fdbf06e28498151586c62cc571
+      internalID: 1211573090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_54
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1564
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db1fa84fc5d08e408110b00d6506a53
+      internalID: -329257393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_55
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1564
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd27b8bd1c84d7b4ca19f65e90084e61
+      internalID: -1106707605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_56
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 1564
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5408a5dcc8197ee46ac8b25ec72d11d3
+      internalID: -1849080513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_57
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1564
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8a8e08ccf2f0e4984b5764022bdb43
+      internalID: -1120553148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_58
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 1564
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2709f6926dc7e3246b58fb0894214db1
+      internalID: 586321499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_59
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1564
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7a2ddc7fa2cfe4e96198a9e7377a2c
+      internalID: -206682351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_60
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1303
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6346b16dd65661e45b832685e81c36f4
+      internalID: 661065492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_61
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1303
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c11e394459b55048b809b9346eb8ce7
+      internalID: -531575107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_62
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1303
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a8e2eba3cc46447aeeeb6f386e7e72
+      internalID: -382888981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_63
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1303
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc51fccd27e85e43bc4d9b0afa28ff6
+      internalID: -2142188630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_64
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1303
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857eb70361eea114da3763ebe919085f
+      internalID: 344181473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_65
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1303
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa59236a430e89040820f911afeb6bdc
+      internalID: -1260935403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_66
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 1303
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcb2fdb0f4c110448e2212a768e00a6
+      internalID: 1651795864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_67
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1303
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe288f548ba09a4ab05b33c47505d83
+      internalID: 2137816437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_68
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 1303
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02adb0277b6768e4a97649286b07a5f8
+      internalID: -565308853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_69
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1303
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb46aab3807f4ce47b2c9272875b4f32
+      internalID: 563957727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_70
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1043
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e52fd9754760a43a0246e850ed3bc9
+      internalID: -2089899341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_71
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1043
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98aedad93e280a146a7d9ccfa1e14b21
+      internalID: -1832031294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_72
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1043
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a5198cefcf0cc499480b89e2ce9b91
+      internalID: -1554085487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_73
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1043
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b221e75b39f314db51c8fadc341a10
+      internalID: -1210399440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_74
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1043
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a0ed5175f9f034ab12628da1246fe1
+      internalID: 1337371868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_75
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1043
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745687fbc80adf44fb7d1beba7ed4529
+      internalID: 531655166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_76
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 1043
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86610fb66aef9474dab2a4b8f6077176
+      internalID: -277626224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_77
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1043
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8a2cdb22923114aa9d4d484c03fdb8
+      internalID: 977877225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_78
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 1043
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecf74262b2810c48b22ab95446b5179
+      internalID: 606386246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_79
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1043
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a235f04d7226d4f8357c70f333cc36
+      internalID: -1595610487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_80
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 782
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77727c3deab72bf4fbe55eee4b954e4a
+      internalID: 1261032178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_81
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 782
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c3dda3de4614e4985088ec67597957
+      internalID: -1188569462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_82
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 782
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3642dfbf94d99243be88c9a4c93a2ab
+      internalID: 316707485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_83
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 782
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9afeacc2a4371478be0f69dade1fda
+      internalID: 1115788155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_84
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 782
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3916f5f4e8d602d45a2390c83c992a5b
+      internalID: 2089072579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_85
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 782
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa969fba06a3f34f9dc478b6e0184c1
+      internalID: -462964639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_86
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 782
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df630b1899ad0554681655039787e41e
+      internalID: 362752247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_87
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 782
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64b06e4b111e5c498ab58f8a931ea85
+      internalID: 2133151504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_88
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 782
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd265742e27340c4ca8d7e03d0877501
+      internalID: -15861453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_89
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 782
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc0b1b5ffc7fa64db19f47f57680ade
+      internalID: 374395819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_90
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 522
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce57b8da3b98b147a9aaf2d3a18fe3a
+      internalID: 1585950171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_91
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 522
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594db956ff147ae4e9a09d9cb17f05f6
+      internalID: 265822451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_92
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 522
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df75110a9ebfa8e449f7eb7adbeb1382
+      internalID: -1823979351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_93
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 522
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c49ef0c7bb99b441839ac9f4432fa99
+      internalID: -1305775280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_94
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 522
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ad39544f232a140bdecee2344b1c65
+      internalID: -1752865804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_95
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 522
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3073fa72e8cf1146af82731b30f3a32
+      internalID: -388238268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_96
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 522
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924c198f93cfe2b47877a4183911f88b
+      internalID: 1487641836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_97
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 522
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c229f3ed1cf96e47a43cd2be57ac06f
+      internalID: 307396431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_98
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 522
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829092e43f21fe043b9fb1bbbd30e8cc
+      internalID: 1896491975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_99
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 522
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395792fbe15bc4243a16b512c3043dd2
+      internalID: -1920759742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_100
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 261
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4cccdba9b3dfa45a418177a7f415c2
+      internalID: 759110025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_101
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 261
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98208b2d93a25de4f9e99c9ad074d7fb
+      internalID: -258001430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_102
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 261
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c931efd6a34f7a744a3e5aacf49e4b68
+      internalID: -957847427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_103
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 261
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c534fb6b656994bba594ce86d1bbf4
+      internalID: 149630084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_104
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 261
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30f80468a04bef479416ced8fd4c5d9
+      internalID: 1759446585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_105
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 261
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125d74765a5c98846afc3ef3417e092e
+      internalID: 1468428258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_106
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 261
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e8bb52b8f41a34b9931e26d0771f05
+      internalID: 733568880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_107
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 261
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ef638226f4d494abc063552a645dac
+      internalID: 1975933245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_108
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 261
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee93de14f1b68245a87e709a77df00e
+      internalID: -1512097157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_109
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 261
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80edafc1c3fd43e44b4d90cad1792e6b
+      internalID: 1393979437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_110
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8117aa10914b3c64da5380a3184ef969
+      internalID: 1346469377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_111
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd97da64c02dcd4ca748019073e343f
+      internalID: -687257552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_112
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a265668645341f04b85d3364bdc8b631
+      internalID: -97940310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_113
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa57030eeaefde64fb5fe86435e70825
+      internalID: -1778475763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_114
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8270dfaf051508843bc44150a32c1672
+      internalID: -1980742411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_115
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf7c9c69bc116644810f939f62e8f96
+      internalID: 829957469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_116
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 1
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7637d7305145654ca98333c038f7c93
+      internalID: -1269741197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_117
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e47d558824860740a298dfbd6bca5fc
+      internalID: -440371887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_118
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 1
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06051eeae3a03a144856848274698589
+      internalID: -77402723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Underhand - Resources_119
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1
+        width: 185
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52a03fb264c0bf4891ba96601a3369c
+      internalID: -594882920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Mobile - Underhand - Resources_56: -1849080513
+      Mobile - Underhand - Resources_11: -359816641
+      Mobile - Underhand - Resources_75: 531655166
+      Mobile - Underhand - Resources_24: 1982127909
+      Mobile - Underhand - Resources_86: 362752247
+      Mobile - Underhand - Resources_67: 2137816437
+      Mobile - Underhand - Resources_82: 316707485
+      Mobile - Underhand - Resources_31: -717099481
+      Mobile - Underhand - Resources_36: 469970175
+      Mobile - Underhand - Resources_9: -282713634
+      Mobile - Underhand - Resources_19: 2097196944
+      Mobile - Underhand - Resources_50: 1497657422
+      Mobile - Underhand - Resources_88: -15861453
+      Mobile - Underhand - Resources_118: -77402723
+      Mobile - Underhand - Resources_28: 1122965495
+      Mobile - Underhand - Resources_62: -382888981
+      Mobile - Underhand - Resources_59: -206682351
+      Mobile - Underhand - Resources_104: 1759446585
+      Mobile - Underhand - Resources_15: 411495278
+      Mobile - Underhand - Resources_16: 434031589
+      Mobile - Underhand - Resources_85: -462964639
+      Mobile - Underhand - Resources_22: 895854197
+      Mobile - Underhand - Resources_103: 149630084
+      Mobile - Underhand - Resources_49: -351346305
+      Mobile - Underhand - Resources_102: -957847427
+      Mobile - Underhand - Resources_93: -1305775280
+      Mobile - Underhand - Resources_112: -97940310
+      Mobile - Underhand - Resources_38: 87805583
+      Mobile - Underhand - Resources_83: 1115788155
+      Mobile - Underhand - Resources_87: 2133151504
+      Mobile - Underhand - Resources_20: -805015151
+      Mobile - Underhand - Resources_46: 1232656031
+      Mobile - Underhand - Resources_47: -1719766474
+      Mobile - Underhand - Resources_92: -1823979351
+      Mobile - Underhand - Resources_107: 1975933245
+      Mobile - Underhand - Resources_14: 2083346474
+      Mobile - Underhand - Resources_7: 1559186775
+      Mobile - Underhand - Resources_73: -1210399440
+      Mobile - Underhand - Resources_45: -1780936327
+      Mobile - Underhand - Resources_100: 759110025
+      Mobile - Underhand - Resources_66: 1651795864
+      Mobile - Underhand - Resources_42: -1917407882
+      Mobile - Underhand - Resources_89: 374395819
+      Mobile - Underhand - Resources_117: -440371887
+      Mobile - Underhand - Resources_34: -2027669898
+      Mobile - Underhand - Resources_70: -2089899341
+      Mobile - Underhand - Resources_4: -168250918
+      Mobile - Underhand - Resources_51: -2069795734
+      Mobile - Underhand - Resources_84: 2089072579
+      Mobile - Underhand - Resources_3: -1341795792
+      Mobile - Underhand - Resources_32: 130352969
+      Mobile - Underhand - Resources_39: -1530997526
+      Mobile - Underhand - Resources_13: -106628634
+      Mobile - Underhand - Resources_55: -1106707605
+      Mobile - Underhand - Resources_76: -277626224
+      Mobile - Underhand - Resources_40: 1506648139
+      Mobile - Underhand - Resources_65: -1260935403
+      Mobile - Underhand - Resources_18: -2096729281
+      Mobile - Underhand - Resources_63: -2142188630
+      Mobile - Underhand - Resources_77: 977877225
+      Mobile - Underhand - Resources_68: -565308853
+      Mobile - Underhand - Resources_74: 1337371868
+      Mobile - Underhand - Resources_25: -1248216214
+      Mobile - Underhand - Resources_105: 1468428258
+      Mobile - Underhand - Resources_54: -329257393
+      Mobile - Underhand - Resources_33: 731967086
+      Mobile - Underhand - Resources_43: 351396125
+      Mobile - Underhand - Resources_26: 1845172141
+      Mobile - Underhand - Resources_35: 439238270
+      Mobile - Underhand - Resources_53: 1211573090
+      Mobile - Underhand - Resources_81: -1188569462
+      Mobile - Underhand - Resources_61: -531575107
+      Mobile - Underhand - Resources_115: 829957469
+      Mobile - Underhand - Resources_2: 2092675672
+      Mobile - Underhand - Resources_21: 1015382423
+      Mobile - Underhand - Resources_106: 733568880
+      Mobile - Underhand - Resources_57: -1120553148
+      Mobile - Underhand - Resources_48: -1953154819
+      Mobile - Underhand - Resources_0: 1196140439
+      Mobile - Underhand - Resources_52: 1893731088
+      Mobile - Underhand - Resources_17: 1582318589
+      Mobile - Underhand - Resources_30: 616437853
+      Mobile - Underhand - Resources_5: -954343746
+      Mobile - Underhand - Resources_91: 265822451
+      Mobile - Underhand - Resources_72: -1554085487
+      Mobile - Underhand - Resources_98: 1896491975
+      Mobile - Underhand - Resources_23: 1439688500
+      Mobile - Underhand - Resources_108: -1512097157
+      Mobile - Underhand - Resources_6: 1621714142
+      Mobile - Underhand - Resources_79: -1595610487
+      Mobile - Underhand - Resources_114: -1980742411
+      Mobile - Underhand - Resources_71: -1832031294
+      Mobile - Underhand - Resources_99: -1920759742
+      Mobile - Underhand - Resources_69: 563957727
+      Mobile - Underhand - Resources_60: 661065492
+      Mobile - Underhand - Resources_12: -1675007575
+      Mobile - Underhand - Resources_27: 1244857880
+      Mobile - Underhand - Resources_58: 586321499
+      Mobile - Underhand - Resources_113: -1778475763
+      Mobile - Underhand - Resources_1: -74667848
+      Mobile - Underhand - Resources_111: -687257552
+      Mobile - Underhand - Resources_29: 489013632
+      Mobile - Underhand - Resources_41: -1786556438
+      Mobile - Underhand - Resources_8: -1260931268
+      Mobile - Underhand - Resources_96: 1487641836
+      Mobile - Underhand - Resources_116: -1269741197
+      Mobile - Underhand - Resources_94: -1752865804
+      Mobile - Underhand - Resources_90: 1585950171
+      Mobile - Underhand - Resources_10: 871377489
+      Mobile - Underhand - Resources_44: -116104109
+      Mobile - Underhand - Resources_95: -388238268
+      Mobile - Underhand - Resources_37: 774667573
+      Mobile - Underhand - Resources_64: 344181473
+      Mobile - Underhand - Resources_80: 1261032178
+      Mobile - Underhand - Resources_101: -258001430
+      Mobile - Underhand - Resources_97: 307396431
+      Mobile - Underhand - Resources_109: 1393979437
+      Mobile - Underhand - Resources_78: 606386246
+      Mobile - Underhand - Resources_119: -594882920
+      Mobile - Underhand - Resources_110: 1346469377
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

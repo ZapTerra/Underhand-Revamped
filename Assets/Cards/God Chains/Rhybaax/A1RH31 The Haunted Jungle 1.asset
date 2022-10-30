@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d007d0d8b16001a4f9a117a815a2f55d, type: 3}
+  m_Name: A1RH31 The Haunted Jungle 1
+  m_EditorClassIdentifier: 
+  eventSprite: {fileID: -2111069173, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
+  weight: 100
+  recurring: 0
+  option1:
+    exists: 1
+    description: Turn Left
+    cost: 
+    reward: 
+    result: Insert the next Expedition event into deck
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: 333d08429c34b9f4b8956456eaf02194, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option2:
+    exists: 1
+    description: Turn Back
+    cost: 
+    reward: 0100000001000000
+    result: '''Insert Expedition'''
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: d7b893512517bbe4da9456c38f7d50df, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option3:
+    exists: 1
+    description: Turn Right
+    cost: 
+    reward: 
+    result: Insert the next Expedition event into deck
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: d91146e4ccbdf67439887fc8cd46ccb9, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
