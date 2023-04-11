@@ -131,7 +131,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b80009780cecf94f9ffe598d1350a9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  travelSpeed: 2
+  rewardResource: 0
+  travelSpeed: 3
+  minimumSpeedVector: 3
   animator: {fileID: 8243504766326435415}
   resourceType: 1
   targetMovement: {x: 0, y: 0, z: 0}
@@ -180,7 +182,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &999343170907999897
 MonoBehaviour:
   m_ObjectHideFlags: 0

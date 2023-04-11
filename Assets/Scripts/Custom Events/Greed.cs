@@ -4,11 +4,12 @@ using Random = System.Random;
 using UnityEngine;
 using Resources;
 
-[CreateAssetMenu(fileName = "Event", menuName = "Game Events/Greed", order = 8)]
+//[CreateAssetMenu(fileName = "Event", menuName = "Game Events/Greed", order = 8)]
 public class Greed : CustomEvent {
     public GameObject burningCardPrefab;
     public override void SpecialEffect(){
         Debug.Log("Greed Activated");
+        FindObjectOfType<ResourceAnimationManager>().StartNewBurn(new List<Resource>(){Resource.Relic}, true);
         var temp = new List<Resource>(HandController.playerResources);
         List<Resource> cardsToBurn = new List<Resource>();
         Random rnd = new Random();
@@ -18,7 +19,7 @@ public class Greed : CustomEvent {
             cardsToBurn.Add(selected);
             Debug.Log(selected);
         }
-        FindObjectOfType<ResourceAnimationManager>().startNewBurn(cardsToBurn);
+        FindObjectOfType<ResourceAnimationManager>().StartNewBurn(cardsToBurn);
         foreach(Resource r in cardsToBurn){
             if(HandController.fieldResources.Contains(r)){
                 HandController.placedFieldResources.Remove(r);

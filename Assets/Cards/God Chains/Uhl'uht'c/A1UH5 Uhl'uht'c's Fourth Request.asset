@@ -20,7 +20,7 @@ MonoBehaviour:
     description: Paint a circle in blood
     cost: 020000000200000001000000010000000300000003000000
     reward: 
-    result: 
+    result: Insert 'Uhl'uht'c'
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}

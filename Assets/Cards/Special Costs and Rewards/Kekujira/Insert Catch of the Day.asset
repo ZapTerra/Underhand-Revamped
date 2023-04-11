@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3885c3463b0c30747b9014fe324b488c, type: 3}
+  m_Name: Insert Catch of the Day
+  m_EditorClassIdentifier: 
+  waitForBurn: 0
+  randomSelection: 1
+  insertionCount: 1
+  allowDuplicates: 0
+  dontInsertIfExistsAlready: 0
+  cardsToInsert:
+  - {fileID: 11400000, guid: 71d454f45bcc0f24e86454746c78f489, type: 2}
+  - {fileID: 11400000, guid: 1f7e228f26097044e83eadf430cef91c, type: 2}
+  - {fileID: 11400000, guid: 24fdd7a638c9dd741b47b215e939fe4e, type: 2}
+  - {fileID: 11400000, guid: 1a526da714f65b640b791f0888ee114f, type: 2}
+  hasRareEvent: 0
+  rareEventOdds: 0
+  rareEvent: {fileID: 0}

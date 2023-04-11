@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Resources;
 
-[CreateAssetMenu(fileName = "Event", menuName = "Game Events/Return Half of Player Amount", order = 4)]
+//[CreateAssetMenu(fileName = "Event", menuName = "Game Events/Return Half of Player Amount", order = 4)]
 public class ReturnHalfOfPlayerAmount : CustomEvent {
     public List<Resource> resourcesToHalve;
     public List<Resource> resourcesToReturn;

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d007d0d8b16001a4f9a117a815a2f55d, type: 3}
+  m_Name: A1YC2 Egg Emergence
+  m_EditorClassIdentifier: 
+  eventSprite: {fileID: 941407680, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
+  weight: 50
+  recurring: 0
+  option1:
+    exists: 1
+    description: Assign a cultist to care for the hatchling
+    cost: 01000000
+    reward: 
+    result: Insert the next Eldritch Beast event into deck
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: d8a7bc54e68515841932c2eaa974c688, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option2:
+    exists: 0
+    description: 
+    cost: 
+    reward: 
+    result: 
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 0
+      specialEffect: {fileID: 0}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option3:
+    exists: 1
+    description: This will make an interesting omelette
+    cost: 
+    reward: 03000000
+    result: 
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 0
+      specialEffect: {fileID: 0}
+      usesCustomOption: 0
+      customOption: {fileID: 0}

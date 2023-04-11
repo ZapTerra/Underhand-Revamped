@@ -15,10 +15,15 @@ public class ResourceAnimationManager : MonoBehaviour
     public List<GameObject> array3 = new List<GameObject>();
     public List<GameObject> array4 = new List<GameObject>();
     public List<GameObject> array5 = new List<GameObject>();
-    public List<GameObject> array = new List<GameObject>();
-    public List<Resource> arrangement = new List<Resource>();
-    public List<Resource> optionCost = new List<Resource>();
+    public List<Resource> burnArrangement = new List<Resource>();
+    public GameObject newCardAnimationPrefab;
+    public Animator circleAnimator;
+    public HandController handController;
     private int burnCount = 0;
+    public static float burnDelay = 1f;
+    public static float returnDelay = 3f;
+    public static float burnInTime = 21/60f;
+    public List<Resource> optionCost = new List<Resource>();
 
     // Start is called before the first frame update
     void Start()
@@ -33,21 +38,67 @@ public class ResourceAnimationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void startNewBurn(List<Resource> cost){
+
+    //badly organized and maybe suboptimal goodnight
+    public void StartNewBurn(List<Resource> cost, bool newCall = false){
         HandController.SortInput(cost);
-        arrangement = new List<Resource>(cost);
+        burnArrangement = new List<Resource>(cost);
         optionCost = new List<Resource>(cost);
         burnCount = cost.Count;
+        if(newCall){
+            if(cost.Count > 0){
+                Debug.Log("Source of burn animation and its delay");
+                StartCoroutine(DelayRewardAnimation());
+                StartCoroutine(BurnAnimation());
+            }else{
+                RewardAnimation();
+            }
+        }
     }
 
-    public Vector3 giveMePosition(Resource type){
-        if(burnArray.Count >= burnCount){
-            arrangement.Remove(type);
-            return burnArray[burnCount - 1][optionCost.IndexOf(type) + (arrangement.Count(x => MatchResource.OneToTwoNoRelic(x, type)))].transform.position;
+    public IEnumerator BurnAnimation(){
+        yield return new WaitForSeconds(burnDelay);
+        circleAnimator.Play("Hellfire");
+        FindObjectOfType<AudioManager>().Play("Sacrifice");
+    }
+
+    public IEnumerator DelayRewardAnimation(){
+        yield return new WaitForSeconds(returnDelay);
+        RewardAnimation();
+    }
+    
+    public void RewardAnimation(){
+        StartNewBurn(HandController.uninstantiatedResources);
+        Debug.Log(HandController.uninstantiatedResources.Count());
+        foreach(Resource r in HandController.uninstantiatedResources){
+            var newCardVisual = Instantiate(newCardAnimationPrefab);
+            CardBurnKinematics k = newCardVisual.GetComponent<CardBurnKinematics>();
+            k.rewardResource = true;
+            k.resourceType = r;
         }
+        StartCoroutine(GetNewCardsOnDelay());
+    }
+
+    public IEnumerator GetNewCardsOnDelay(){
+        yield return new WaitForSeconds(burnInTime);
+        StartNewBurn(HandController.uninstantiatedResources);
+        HandController.handResources.AddRange(HandController.uninstantiatedResources);
+        HandController.uninstantiatedResources.Clear();
+        handController.UpdateHandContents(2);
+    }
+
+    public Vector3 giveMePositionBurn(Resource type, bool final = false){
+        if(burnArray.Count >= burnCount){
+            Debug.Log(burnArrangement.Count);
+            burnArrangement.Remove(type);
+            Debug.Log(burnArrangement.Count);
+            Debug.Log(burnArrangement.Count + " " + final.ToString() + " " + type);
+            return burnArray[burnCount - 1][optionCost.IndexOf(type) + (burnArrangement.Count(x => MatchResource.OneToTwoNoRelic(x, type)))].transform.position;
+        }
+
         return Vector3.zero;
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using Resources;
 
-[CreateAssetMenu(fileName = "Event", menuName = "Game Events/Necronomicon Workaround (Original Dev)", order = 7)]
+//[CreateAssetMenu(fileName = "Event", menuName = "Game Events/Necronomicon Workaround (Original Dev)", order = 7)]
 public class NecronomiconDevWorkaround : CustomEvent {
     public Option canRead;
     public Option cantRead;

@@ -18,6 +18,8 @@ public class EventCard : MonoBehaviour
     public Option choice2;
     public Option choice3;
 
+    //To allow effects like Foresight to activate once the burn animation completes
+    public float BurnAnimationLength;
     public Image cardImage;
     public Image bg1;
     public Image bg2;
@@ -40,10 +42,12 @@ public class EventCard : MonoBehaviour
     public Image background1;
     public Image background2;
     public Image background3;
-    public Sprite activeChoice;
+    public Sprite unavailableChoice;
     public Sprite availableChoice;
     public Sprite expensiveChoice;
-    public Sprite unavailableChoice;
+    public Sprite paidExpensiveChoice;
+    public Sprite paidAvailableChoice;
+    public Animator animator;
 
     private int checkResult = 0;
 
@@ -57,12 +61,16 @@ public class EventCard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        setCardBackground(background1, checkIfOptionIsPossible(data.option1, HandController.playerResources));
+        setCardBackground(background2, checkIfOptionIsPossible(data.option2, HandController.playerResources));
+        setCardBackground(background3, checkIfOptionIsPossible(data.option3, HandController.playerResources));
     }
-
+    
     public void populateCard(){
         cardImage.sprite = data.eventSprite;
-    
+        bool lose1 = false;
+        bool lose2 = false;
+        bool lose3 = false;
         //I have to include this if I want to stay true to the original game because of a ridiculous dev workaround    
         if(data.option1.specialEffects.usesCustomOption){
             choice1 = data.option1.specialEffects.customOption.SpecialOption();
@@ -71,14 +79,19 @@ public class EventCard : MonoBehaviour
         }
         if(choice1.specialEffects.useSpecialCost)
         choice1.cost.AddRange(data.option1.specialEffects.specialCost.ReturnSpecialValue());
-        checkResult = checkIfOptionIsPossible(data.option1);
+        checkResult = checkIfOptionIsPossible(data.option1, HandController.playerResources);
         if(checkResult == 0){
             data.option1.exists = false;
+        }
+        if(data.option1.specialEffects.useSpecialEffect){
+            if(data.option1.specialEffects.specialEffect.GetType().Name == "Lose"){
+                data.option1.exists = false;
+                lose1 = true;
+            }
         }
         if(!data.option1.exists){
             checkResult = 0;
         }
-        setCardBackground(background1, checkResult);
 
         //I have to include this if I want to stay true to the original game because of a ridiculous dev workaround    
         if(data.option2.specialEffects.usesCustomOption){
@@ -88,14 +101,19 @@ public class EventCard : MonoBehaviour
         }
         if(choice2.specialEffects.useSpecialCost)
         choice2.cost.AddRange(data.option2.specialEffects.specialCost.ReturnSpecialValue());
-        checkResult = checkIfOptionIsPossible(data.option2);
+        checkResult = checkIfOptionIsPossible(data.option2, HandController.playerResources);
         if(checkResult == 0){
             data.option2.exists = false;
+        }
+        if(data.option2.specialEffects.useSpecialEffect){
+            if(data.option2.specialEffects.specialEffect.GetType().Name == "Lose"){
+                data.option2.exists = false;
+                lose2 = true;
+            }
         }
         if(!data.option2.exists){
             checkResult = 0;
         }
-        setCardBackground(background2, checkResult);
 
         //I have to include this if I want to stay true to the original game because of a ridiculous dev workaround    
         if(data.option3.specialEffects.usesCustomOption){
@@ -105,14 +123,33 @@ public class EventCard : MonoBehaviour
         }
         if(choice3.specialEffects.useSpecialCost)
         choice3.cost.AddRange(data.option3.specialEffects.specialCost.ReturnSpecialValue());
-        checkResult = checkIfOptionIsPossible(data.option3);
+        checkResult = checkIfOptionIsPossible(data.option3, HandController.playerResources);
         if(checkResult == 0){
             data.option3.exists = false;
+        }
+        if(data.option3.specialEffects.useSpecialEffect){
+            if(data.option3.specialEffects.specialEffect.GetType().Name == "Lose"){
+                data.option3.exists = false;
+                lose3 = true;
+            }
         }
         if(!data.option3.exists){
             checkResult = 0;
         }
-        setCardBackground(background3, checkResult);
+
+        //If the other options are not possible, losing options will be available.
+        if(lose1 && !data.option2.exists && !data.option3.exists){
+            lose1 = false;}else{lose1 = true;}
+        if(lose2 && !data.option1.exists && !data.option3.exists){
+            lose2 = false;}else{lose2 = true;}
+        if(lose3 && !data.option1.exists && !data.option2.exists){
+            lose3 = false;}else{lose3 = true;}
+        if(!lose1){
+            data.option1.exists = true;}
+        if(!lose2){
+            data.option2.exists = true;}
+        if(!lose3){
+            data.option3.exists = true;}
 
 
         text1.text = choice1.description;
@@ -176,26 +213,56 @@ public class EventCard : MonoBehaviour
             
             if(checkoff.SequenceEqual(choice.cost)){
                 choiceActivated = true;
-                FindObjectOfType<ResourceAnimationManager>().startNewBurn(resourcesForSacrifice);
                 foreach(Resource res in resourcesForSacrifice){
                     HandController.placedFieldResources.Remove(res);
                     HandController.fieldResources.Remove(res);
                     HandController.playerResources.Remove(res);
                 }
                 HandController.playerResources.AddRange(choice.reward);
-                HandController.handResources.AddRange(choice.reward);
-                if(choice.specialEffects.useSpecialEffect){
-                    choice.specialEffects.specialEffect.SpecialEffect();
-                }
+                HandController.uninstantiatedResources.AddRange(choice.reward);
+                FindObjectOfType<ResourceAnimationManager>().StartNewBurn(resourcesForSacrifice, true);
 
-                FindObjectOfType<HandController>().UpdateHandContents();
-                FindObjectOfType<HandController>().updateHandVisuals();
-                FindObjectOfType<CardManager>().NextCard();
-                Destroy(gameObject);
+                StartCoroutine(DoEffectsAndAnimations(choice, resourcesForSacrifice.Count > 0));
+                background1.GetComponent<ChangeColorOrSprite>().enabled = false;
+                background2.GetComponent<ChangeColorOrSprite>().enabled = false;
+                background3.GetComponent<ChangeColorOrSprite>().enabled = false;
+                if(data.recurring){
+                    animator.SetBool("Reshuffle", true);
+                }else{
+                    animator.SetBool("Discard", true);
+                }
+                if(choice.radioVoice != null){
+                    AudioSource.PlayClipAtPoint(choice.radioVoice, Vector3.zero);
+                }
             }else{
                 //LAUGH AT THE PLAYER (nicely)
             }
         }
+    }
+
+    public IEnumerator DoEffectsAndAnimations(Option choice, bool resourcesWillBurn){
+        //Determines whether the game waits for the burn animation before or after an effect activates, because other visuals are always delayed by a burn.
+        //logic might be messy but I think it's good.
+        if(choice.specialEffects.useSpecialEffect){
+            if(choice.specialEffects.specialEffect.waitForBurn && resourcesWillBurn){
+                yield return new WaitForSeconds(BurnAnimationLength);
+            }
+            if(choice.specialEffects.specialEffect.GetType().Name == "InsertCards"){
+                animator.SetBool("Insert", true);
+            }
+            choice.specialEffects.specialEffect.SpecialEffect();
+        }else if(resourcesWillBurn){
+            yield return new WaitForSeconds(BurnAnimationLength);
+        }
+        FindObjectOfType<CrisisEventVisuals>().checkVisuals();
+        animator.Play("RefoldCard");
+    }
+
+
+    //Called at end of reshuffle animation
+    public void DoNextCard(){
+                FindObjectOfType<CardManager>().NextCard();
+                Destroy(gameObject);
     }
 
     public void populateIconHolder(List<Resource> cost, GameObject holder, bool isCost){
@@ -205,69 +272,85 @@ public class EventCard : MonoBehaviour
             currentResource = cost[0];
         }
         int currentStackCount = 0;
+        int totalStackCount = 0;
         foreach(Resource re in cost){
+            totalStackCount++;
             if(currentResource == re){
                 currentStackCount++;
             }else{
                 currentResource = re;
                 currentStackCount = 1;
             }
-            InstantiateAppropriateIcon(re, holder, currentStackCount, isCost);
+            InstantiateAppropriateIcon(re, holder, currentStackCount, cost, isCost);
         }
     }
 
     public void setCardBackground(Image background, int evaluator){
-        background.sprite = evaluator > 0 ? (evaluator > 1 ? availableChoice : expensiveChoice) : unavailableChoice;
+        background.sprite =
+         evaluator < 4 ? 
+        (evaluator < 3 ? 
+        (evaluator < 2 ? 
+        (evaluator < 1  
+        ? unavailableChoice
+        : expensiveChoice)
+        : availableChoice)
+        : paidExpensiveChoice)
+        : paidAvailableChoice;
     }
 
-    public void InstantiateAppropriateIcon(Resource re, GameObject holder, int displayOrder, bool isCost){
+    public void InstantiateAppropriateIcon(Resource re, GameObject holder, int resourceOrder, List<Resource> cost, bool isCost){
         GameObject newIcon = Instantiate(resourcePrefab, holder.transform);
-        newIcon.GetComponentInChildren<ResourceIcon>().displayOrder = displayOrder;
+        newIcon.GetComponentInChildren<ResourceIcon>().resourceOrder = resourceOrder;
+        newIcon.GetComponentInChildren<ResourceIcon>().costOption = cost;
         newIcon.GetComponentInChildren<ResourceIcon>().resourceType = re;
         newIcon.GetComponentInChildren<ResourceIcon>().isCost = isCost;
     }
 
-    public int checkIfOptionIsPossible(Option choice){
-        //I don't know if the new<> is necessary, will look up when I have internet
-        List<Resource> tempList = new List<Resource>(HandController.SortInput(HandController.playerResources));
-        List<Resource> costList = new List<Resource>(choice.cost);
-        List<Resource> resourcesForSacrifice = new List<Resource>();
-        List<Resource> checkoff = new List<Resource>();
+    public int checkIfOptionIsPossible(Option choice, List<Resource> resources, bool secondRun = false){
+        if(choice.exists){
+            //I don't know if the new<> is necessary, will look up when I have internet
+            List<Resource> tempList = new List<Resource>(HandController.SortInput(resources));
+            List<Resource> costList = new List<Resource>(choice.cost);
+            List<Resource> resourcesForSacrifice = new List<Resource>();
+            List<Resource> checkoff = new List<Resource>();
 
-        tempList.Reverse();
-        bool usesRelic = false;
-        foreach(Resource re in costList){
-            List<Resource> tempTemp = new List<Resource>(tempList);
-            foreach(Resource check in tempTemp){
-                if(MatchResource.OneToTwoLowValue(check, re)){
-                    tempList.Remove(check);
-                    resourcesForSacrifice.Add(check);
-                    checkoff.Add(re);
-                    break;
-                }else if(MatchResource.OneToTwoNoRelic(check, re)){
-                    tempList.Remove(check);
-                    resourcesForSacrifice.Add(check);
-                    checkoff.Add(re);
-                    break;
-                }else if(MatchResource.OneToTwo(check, re)){
-                    tempList.Remove(check);
-                    resourcesForSacrifice.Add(check);
-                    checkoff.Add(re);
-                    usesRelic = true;
-                    break;
+            tempList.Reverse();
+            bool usesRelic = false;
+            foreach(Resource re in costList){
+                List<Resource> tempTemp = new List<Resource>(tempList);
+                foreach(Resource check in tempTemp){
+                    if(MatchResource.OneToTwoLowValue(check, re)){
+                        tempList.Remove(check);
+                        resourcesForSacrifice.Add(check);
+                        checkoff.Add(re);
+                        break;
+                    }else if(MatchResource.OneToTwoNoRelic(check, re)){
+                        tempList.Remove(check);
+                        resourcesForSacrifice.Add(check);
+                        checkoff.Add(re);
+                        break;
+                    }else if(MatchResource.OneToTwo(check, re)){
+                        tempList.Remove(check);
+                        resourcesForSacrifice.Add(check);
+                        checkoff.Add(re);
+                        usesRelic = true;
+                        break;
+                    }
                 }
             }
-        }
-        if(checkoff.SequenceEqual(choice.cost)){
-            if(usesRelic){
-                return 1;
+            if(checkoff.SequenceEqual(choice.cost)){
+                if(usesRelic){
+                    return 1 + (int)(secondRun ? 0 : (checkIfOptionIsPossible(choice, HandController.placedFieldResources, true) > 0 ? 2 : 0));
+                }else{
+                    return 2 + (int)(secondRun ? 0 : checkIfOptionIsPossible(choice, HandController.placedFieldResources, true));
+                }
             }else{
-                return 2;
+                return 0;
             }
         }else{
             return 0;
         }
-    }
+    }  
 }
 
 [System.Serializable]
@@ -277,7 +360,8 @@ public class Option
     public string description;
     public List<Resource> cost = new List<Resource>();
     public List<Resource> reward = new List<Resource>();
-    public string result;
+    public string result; 
+    public AudioClip radioVoice;
     public SpecialEffects specialEffects;
 }
 

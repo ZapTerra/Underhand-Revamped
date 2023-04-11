@@ -16,7 +16,7 @@ MonoBehaviour:
   weight: 10
   recurring: 1
   option1:
-    exists: 0
+    exists: 1
     description: No-one will miss two or three
     cost: 
     reward: 0400000004000000040000000600000006000000

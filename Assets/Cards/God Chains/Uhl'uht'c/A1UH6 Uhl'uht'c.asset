@@ -21,6 +21,7 @@ MonoBehaviour:
     cost: 00000000
     reward: 
     result: Summon Uhl'uht'c
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -36,6 +37,7 @@ MonoBehaviour:
     cost: 
     reward: 
     result: 
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -50,7 +52,8 @@ MonoBehaviour:
     description: Abandon the task
     cost: 
     reward: 
-    result: 
+    result: Insert 5x 'Wrath of the Gods'
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}

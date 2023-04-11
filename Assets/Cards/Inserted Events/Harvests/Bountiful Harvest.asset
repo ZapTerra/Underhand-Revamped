@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d007d0d8b16001a4f9a117a815a2f55d, type: 3}
+  m_Name: Bountiful Harvest
+  m_EditorClassIdentifier: 
+  eventSprite: {fileID: 1233793326, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
+  weight: 10
+  recurring: 0
+  option1:
+    exists: 1
+    description: We could use food
+    cost: 
+    reward: 030000000300000003000000
+    result: 
+    radioVoice: {fileID: 0}
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 0
+      specialEffect: {fileID: 0}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option2:
+    exists: 1
+    description: Resow the crop
+    cost: 
+    reward: 
+    result: Insert x2 'Harvest'
+    radioVoice: {fileID: 0}
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: 9c4e7786d8bf38a4f93233cad45ebc1e, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option3:
+    exists: 1
+    description: Sell the food in town
+    cost: 
+    reward: 020000000200000002000000
+    result: 
+    radioVoice: {fileID: 0}
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 0
+      specialEffect: {fileID: 0}
+      usesCustomOption: 0
+      customOption: {fileID: 0}

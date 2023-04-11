@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Resources;
 
-[CreateAssetMenu(fileName = "Protect Resources", menuName = "Game Events/Protect Resources", order = 6)]
+[CreateAssetMenu(fileName = "Protect Resources", menuName = "Game Events/Protect Resources", order = 4)]
 public class ProtectResources : CustomEvent {
     public List<Resource> resourcesToProtect = new List<Resource>();
     public virtual void SpecialEffect(){

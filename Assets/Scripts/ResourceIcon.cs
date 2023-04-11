@@ -7,7 +7,8 @@ using Resources;
 
 public class ResourceIcon : MonoBehaviour
 {
-    public int displayOrder;
+    public int resourceOrder;
+    public List<Resource> costOption;
     public Resource resourceType;
     public Resource resourceTypes;
     public bool isCost;
@@ -21,6 +22,7 @@ public class ResourceIcon : MonoBehaviour
     public Sprite suspicion;
 
     private bool graeyedOut;
+    private List<Resource> lastResourcesInPlay = new List<Resource>();
     void Start()
     {
         var displaySprite = relic;
@@ -47,11 +49,35 @@ public class ResourceIcon : MonoBehaviour
 
     void Update()
     {
-        if(HandController.placedFieldResources.Count(x => MatchResource.OneToTwo(x, resourceType)) >= displayOrder && isCost){
-            GetComponent<Image>().color = Color.gray;
-            graeyedOut = true;
-        }else if(graeyedOut){
-            GetComponent<Image>().color = Color.white;
+        //kinda inefficient but a lot easier to implement than a better solution and the computing cost is fairly small
+        if(!lastResourcesInPlay.Equals(HandController.placedFieldResources)){
+            lastResourcesInPlay = new List<Resource>(HandController.placedFieldResources);
+            var tempList = new List<Resource>(HandController.placedFieldResources);
+            var tempList2 = new List<Resource>(HandController.placedFieldResources);
+            var needResource = new List<Resource>(costOption);
+            foreach(Resource r in costOption){
+                tempList = new List<Resource>(tempList2);
+                foreach(Resource t in tempList){
+                    if(MatchResource.OneToTwoNoRelic(t, r)){
+                        //uses r and t respectively because of resource requirements which can be satisfied in multiple ways
+                        needResource.Remove(r);
+                        tempList2.Remove(t);
+                        break;
+                    }
+                }
+            }
+            foreach(Resource r in tempList2){
+                if(r == Resource.Relic && needResource.Count > 0){
+                    needResource.RemoveAt(0);
+                }
+            }
+            
+            if((costOption.Count(x => MatchResource.OneToTwoNoRelic(x, resourceType)) - needResource.Count(x => MatchResource.OneToTwoNoRelic(x, resourceType)) >= resourceOrder) && isCost){
+                GetComponent<Image>().color = Color.gray;
+                graeyedOut = true;
+            }else if(graeyedOut){
+                GetComponent<Image>().color = Color.white;
+            }
         }
     }
 }

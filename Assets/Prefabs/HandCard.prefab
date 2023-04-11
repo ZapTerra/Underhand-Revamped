@@ -60,16 +60,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a3daebc4289fb419b533c14b5c2fee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  travelSpeedOnCreated: 10
   resourceType: 0
   handController: {fileID: 0}
   fieldResource: {fileID: 7952739882990762345, guid: 446c4b7d55ef21f4d951cefe067715cb, type: 3}
-  relic: {fileID: 1585950171, guid: 84b38c26a626427459f7f1e9b0f93fc8, type: 3}
-  cultist: {fileID: -282713634, guid: 84b38c26a626427459f7f1e9b0f93fc8, type: 3}
-  money: {fileID: -351346305, guid: 84b38c26a626427459f7f1e9b0f93fc8, type: 3}
-  food: {fileID: 489013632, guid: 84b38c26a626427459f7f1e9b0f93fc8, type: 3}
-  prisoner: {fileID: 563957727, guid: 84b38c26a626427459f7f1e9b0f93fc8, type: 3}
-  human: {fileID: -1970092013, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
-  suspicion: {fileID: 1393979437, guid: 84b38c26a626427459f7f1e9b0f93fc8, type: 3}
+  creationBehavior: 0
+  reachedPosition: 0
 --- !u!114 &8713616321084805100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,7 +205,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &8713616321454191048
 MonoBehaviour:
   m_ObjectHideFlags: 0

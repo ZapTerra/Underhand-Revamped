@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d007d0d8b16001a4f9a117a815a2f55d, type: 3}
+  m_Name: A1JH2 Small Business
+  m_EditorClassIdentifier: 
+  eventSprite: {fileID: 94364675, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
+  weight: 50
+  recurring: 0
+  option1:
+    exists: 1
+    description: Get out while we're ahead
+    cost: 
+    reward: 020000000200000002000000
+    result: Insert 'Start a Tea Shop'
+    radioVoice: {fileID: 0}
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: 7c913e35660f1e540bd832ff513255e9, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option2:
+    exists: 1
+    description: Reinvest our fortune
+    cost: 0200000002000000
+    reward: 0600000006000000
+    result: Insert the next Prosperity event into deck
+    radioVoice: {fileID: 0}
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: 8646f05d32095f842b960995169f51fc, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option3:
+    exists: 1
+    description: Merely sustain it
+    cost: 02000000
+    reward: 06000000
+    result: Insert the next Prosperity event into deck
+    radioVoice: {fileID: 0}
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: a2af65db661b19e419719c2c910c1d96, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}

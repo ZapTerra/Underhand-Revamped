@@ -26,8 +26,8 @@ MonoBehaviour:
       specialCost: {fileID: 0}
       useSpecialReward: 0
       specialReward: {fileID: 0}
-      useSpecialEffect: 0
-      specialEffect: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: 7e2516fe5d3b99444abab6082e38bf4e, type: 2}
       usesCustomOption: 0
       customOption: {fileID: 0}
   option2:
@@ -41,8 +41,8 @@ MonoBehaviour:
       specialCost: {fileID: 0}
       useSpecialReward: 0
       specialReward: {fileID: 0}
-      useSpecialEffect: 0
-      specialEffect: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: 7e2516fe5d3b99444abab6082e38bf4e, type: 2}
       usesCustomOption: 0
       customOption: {fileID: 0}
   option3:

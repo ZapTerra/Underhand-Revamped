@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Gameplay Cameras
+  - Pause Menu Camera
   layers:
   - Default
   - TransparentFX
@@ -28,7 +30,7 @@ TagManager:
   - Overlay
   - 
   - 
-  - 
+  - Foresight Overlay
   - 
   - 
   - 

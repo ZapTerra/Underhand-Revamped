@@ -58,12 +58,13 @@ public class FieldResource : MonoBehaviour
                     HandController.cardObjectsInField.Remove(gameObject);
                     HandController.handResources.Add(resourceType);
                     HandController.fieldResources.Remove(resourceType);
-                    handController.UpdateHandContents();
+                    handController.UpdateHandContents(1);
                     handController.updateHandVisuals();
                     ResourceCard.heldCard = null;
                     placedInHand = true;
                     Destroy(gameObject);
                 }else{
+                    FindObjectOfType<AudioManager>().Play("Drop");
                     HandController.placedFieldResources.Add(resourceType);
                     ResourceCard.heldCard = null;
                     transform.position = GetTargetPosition();

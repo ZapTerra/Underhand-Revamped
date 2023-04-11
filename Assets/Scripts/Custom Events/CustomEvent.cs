@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Resources;
 
-[CreateAssetMenu(fileName = "Event", menuName = "Game Events/Effect", order = 2)]
+//[CreateAssetMenu(fileName = "Event", menuName = "Game Events/Effect", order = 1)]
 public class CustomEvent : ScriptableObject {
+    public bool waitForBurn;
     public virtual void SpecialEffect(){
 
     }

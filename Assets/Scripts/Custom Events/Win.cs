@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Resources;
+using UnityEngine.UI;
 
-[CreateAssetMenu(fileName = "Event", menuName = "Game Events/Win", order = 2)]
+[CreateAssetMenu(fileName = "Event", menuName = "Game Events/Win", order = 3)]
 public class Win : CustomEvent {
-    public virtual void SpecialEffect(){
-        
-    }
-    public virtual List<Resource> ReturnSpecialValue(){
-        return new List<Resource>(0);
+    public string godName;
+    public override void SpecialEffect(){
+        PlayerPrefs.SetInt(godName, PlayerPrefs.GetInt(godName) + 1);
+        Debug.Log(PlayerPrefs.GetInt(godName));
+        GalleryWinDisplay.win = godName;
+        FindObjectOfType<WinLoseUI>().Win();
     }
 }

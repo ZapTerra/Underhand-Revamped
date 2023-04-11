@@ -6,6 +6,7 @@ using Resources;
 
 public class ResourceCard : MonoBehaviour
 {
+    public float travelSpeedOnCreated = 2f;
     public static GameObject heldCard;
     public static bool pickedUpCard;
     public Resource resourceType;
@@ -13,6 +14,12 @@ public class ResourceCard : MonoBehaviour
     public GameObject fieldResource;
     private Vector2 lastMousePos;
     private Vector2 firstMousePos;
+    private float movementLerp;
+    public int creationBehavior;
+    
+    private Vector3 startPosition;
+    private float handRotationBeforeMoving;
+    public bool reachedPosition;
 
     private LayerMask clickableLayers;
     private RaycastHit2D[] hits; //Change this number to however many selectable objects you think you'll have layered on top of eachother. This is for performance reasons.
@@ -24,11 +31,26 @@ public class ResourceCard : MonoBehaviour
     void Start()
     {
         gameObject.GetComponent<Image>().sprite = FindObjectOfType<GetCardSprite>().ReturnAppropriateCardSprite(resourceType);
+        if(creationBehavior == 2){
+            startPosition = FindObjectOfType<ResourceAnimationManager>().giveMePositionBurn(resourceType);
+        }else if(creationBehavior == 1){
+            startPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
+        }else{
+            reachedPosition = true;
+        }
+
+        if(creationBehavior > 0){
+            transform.parent.position = startPosition - (transform.position - transform.parent.position);
+            var z = transform.parent.parent.position;
+            var p = transform.parent.position;
+            transform.parent.position = new Vector3(p.x, p.y, z.z);
+        }
     }
 
     void OnMouseOver(){
         if(((heldCard == null) || (heldCard.GetComponentInParent<Canvas>().sortingOrder < GetComponentInParent<Canvas>().sortingOrder)) && Input.GetMouseButton(0)){
             heldCard = gameObject;
+            handRotationBeforeMoving = HandController.handRotation;
             lastMousePos = Input.mousePosition;
             firstMousePos = Input.mousePosition;
         }
@@ -37,6 +59,14 @@ public class ResourceCard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!reachedPosition){
+            //This will break if you rearrange the hierarchy
+            transform.parent.position = Vector3.MoveTowards(transform.parent.position, transform.parent.parent.position, Time.deltaTime * travelSpeedOnCreated);
+            if(transform.parent.position == transform.parent.parent.position){
+                reachedPosition = true;
+            }
+        }
+
         if(Input.GetMouseButtonUp(0)){
             if(heldCard == gameObject){
                 heldCard = null;
@@ -61,12 +91,31 @@ public class ResourceCard : MonoBehaviour
                 fieldScript.placeCardOnTop();
                 fieldScript.handController = handController;
                 heldCard = fieldCard;
-                handController.UpdateHandContents();
+                //Shouldn't result in the creation of new cards. In the case of a bug it's probably better to just not animate the new cards.
+                handController.UpdateHandContents(0);
                 handController.updateHandVisuals();
             }
-            HandController.handRotation -= (Input.mousePosition.x - lastMousePos.x) / Screen.width * 120;
-            lastMousePos = Input.mousePosition;
+            //If the player drags within the second/ninth tenth (i hate ENGLISH I HATE ASHFKLJ) of the screen,
+            //Lerp over to a higher value so that by the time they reach the first/last tenth of the screen the hand reaches its maximum rotation
+            float rot = 0f;
+            if(Mathf.Abs(Input.mousePosition.x - Screen.width / 2) >= Screen.width * .3f){
+                //how far the hand should be lerped from where rotation begins to ends
+                float ampedLerpValue = (Mathf.Clamp((Mathf.Abs(Input.mousePosition.x - Screen.width / 2) - (Screen.width * .3f)), 0, Screen.width * .1f) / (Screen.width * .1f));
+                //whether the hand's rotation value should be negative or positive.
+                float sign = -Mathf.Sign(Input.mousePosition.x - Screen.width / 2);
+                //Move where the hand is at towards the target lerped value, by Time.deltaTime.
+                //I wasn't originally going to use the value of where the hand should be without the effect, but it makes a bezier-like smoothness even with no lerping
+                //I think whoever programmed this before I did had to go through the same headache and found the same solution :)
+                rot = Mathf.MoveTowards(HandController.handRotation, Mathf.Lerp(handRotationAtX(Input.mousePosition.x), handController.maxHandRotation() * sign, ampedLerpValue), Time.deltaTime * handController.fancyScrollSpeed);
+            }else{
+                rot = handRotationAtX(Input.mousePosition.x);
+            }
+            HandController.handRotation = rot;
         }
+    }
+
+    private float handRotationAtX(float x){
+        return handRotationBeforeMoving - (x - lastMousePos.x) / Screen.width * 120;
     }
 
     void SelectTopTile()

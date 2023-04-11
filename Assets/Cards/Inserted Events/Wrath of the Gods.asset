@@ -18,9 +18,10 @@ MonoBehaviour:
   option1:
     exists: 1
     description: Appease them with a large sacrifice
-    cost: 0100000001000000010000000100000001000000
+    cost: 0500000005000000050000000500000005000000
     reward: 
     result: 
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -28,12 +29,15 @@ MonoBehaviour:
       specialReward: {fileID: 0}
       useSpecialEffect: 0
       specialEffect: {fileID: 0}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
   option2:
     exists: 1
     description: Appease them with a sacred offering
     cost: 00000000
     reward: 
     result: 
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -41,12 +45,15 @@ MonoBehaviour:
       specialReward: {fileID: 0}
       useSpecialEffect: 0
       specialEffect: {fileID: 0}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
   option3:
     exists: 1
     description: The end has come
     cost: 
     reward: 
     result: You Lose
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -54,3 +61,5 @@ MonoBehaviour:
       specialReward: {fileID: 0}
       useSpecialEffect: 1
       specialEffect: {fileID: 11400000, guid: f0e3829876f767f4ca12c7d71128ae21, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}

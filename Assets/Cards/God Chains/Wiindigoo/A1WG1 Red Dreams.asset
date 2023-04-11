@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d007d0d8b16001a4f9a117a815a2f55d, type: 3}
+  m_Name: A1WG1 Red Dreams
+  m_EditorClassIdentifier: 
+  eventSprite: {fileID: -19934260, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
+  weight: 50
+  recurring: 0
+  option1:
+    exists: 1
+    description: Indulge again
+    cost: 05000000
+    reward: 
+    result: Insert the next Peculiar Palate event into deck
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: 79f5b28cc109dde4cb1cfaa7f9e5d97b, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option2:
+    exists: 1
+    description: Perhaps just once more
+    cost: 05000000
+    reward: 03000000
+    result: 
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 0
+      specialEffect: {fileID: 0}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option3:
+    exists: 1
+    description: Supress your desire for now
+    cost: 
+    reward: 
+    result: Insert 'Red Dreams'
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: 62b406c63ba8f04489f88d9b2ecb0b57, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}

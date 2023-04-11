@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d007d0d8b16001a4f9a117a815a2f55d, type: 3}
+  m_Name: Aeromancy
+  m_EditorClassIdentifier: 
+  eventSprite: {fileID: -1463919191, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
+  weight: 10
+  recurring: 0
+  option1:
+    exists: 1
+    description: Pray for rain
+    cost: 05000000
+    reward: 
+    result: Insert 'Rain'
+    radioVoice: {fileID: 0}
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: 54cee629fbc75fe4d9e660b53afc67a2, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option2:
+    exists: 1
+    description: Pray for sun
+    cost: 05000000
+    reward: 
+    result: Insert 'Golden Sun'
+    radioVoice: {fileID: 0}
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: af924d05226c31943a23acdb64d0cdfb, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option3:
+    exists: 1
+    description: This weather is acceptable
+    cost: 
+    reward: 
+    result: Insert 'Aeromancy'
+    radioVoice: {fileID: 0}
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: 3089d4f0b295d5043a168e88640f6908, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}

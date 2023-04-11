@@ -21,13 +21,14 @@ MonoBehaviour:
     cost: 
     reward: 
     result: Summon Rhybaax
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
       useSpecialReward: 0
       specialReward: {fileID: 0}
-      useSpecialEffect: 0
-      specialEffect: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: 6afc14dbe4bbd0249a41f84c6fb53b98, type: 2}
       usesCustomOption: 0
       customOption: {fileID: 0}
   option2:
@@ -36,6 +37,7 @@ MonoBehaviour:
     cost: 
     reward: 
     result: 
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -51,6 +53,7 @@ MonoBehaviour:
     cost: 
     reward: 
     result: Insert this event back into deck
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}

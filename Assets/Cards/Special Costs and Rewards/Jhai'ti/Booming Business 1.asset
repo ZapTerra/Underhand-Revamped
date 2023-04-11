@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3885c3463b0c30747b9014fe324b488c, type: 3}
+  m_Name: Booming Business 1
+  m_EditorClassIdentifier: 
+  waitForBurn: 0
+  randomSelection: 1
+  insertionCount: 0
+  allowDuplicates: 0
+  dontInsertIfExistsAlready: 0
+  cardsToInsert:
+  - {fileID: 11400000, guid: 0379c445d89c1ea4cb10752dd5bcc439, type: 2}
+  - {fileID: 11400000, guid: 9d93703bfc28adb4797c9e6b7845c461, type: 2}
+  - {fileID: 11400000, guid: 9d93703bfc28adb4797c9e6b7845c461, type: 2}
+  hasRareEvent: 0
+  rareEventOdds: 0
+  rareEvent: {fileID: 0}
