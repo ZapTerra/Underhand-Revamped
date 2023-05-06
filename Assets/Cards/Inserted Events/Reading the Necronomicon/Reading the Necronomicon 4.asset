@@ -21,6 +21,7 @@ MonoBehaviour:
     cost: 
     reward: 
     result: 
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -36,6 +37,7 @@ MonoBehaviour:
     cost: 
     reward: 0600000006000000
     result: 
+    radioVoice: {fileID: 8300000, guid: b511f4822c917cd40bf56ca47f27e2df, type: 3}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -51,6 +53,7 @@ MonoBehaviour:
     cost: 
     reward: 
     result: 
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d007d0d8b16001a4f9a117a815a2f55d, type: 3}
+  m_Name: Progression
+  m_EditorClassIdentifier: 
+  eventSprite: {fileID: -247742938, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
+  weight: 10
+  recurring: 0
+  option1:
+    exists: 1
+    description: This option will make progress, but is expensive
+    cost: 020000000200000002000000
+    reward: 04000000
+    result: 
+    radioVoice: {fileID: 0}
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: 20acffaf8ef799a49be23c8a7c59ceab, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option2:
+    exists: 0
+    description: 
+    cost: 
+    reward: 
+    result: 
+    radioVoice: {fileID: 0}
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 0
+      specialEffect: {fileID: 0}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
+  option3:
+    exists: 1
+    description: This option will maintain your current position
+    cost: 0300000003000000
+    reward: 
+    result: Insert this card back into your deck
+    radioVoice: {fileID: 0}
+    specialEffects:
+      useSpecialCost: 0
+      specialCost: {fileID: 0}
+      useSpecialReward: 0
+      specialReward: {fileID: 0}
+      useSpecialEffect: 1
+      specialEffect: {fileID: 11400000, guid: c2270bf4268675c438b1bc7ed0fe9342, type: 2}
+      usesCustomOption: 0
+      customOption: {fileID: 0}

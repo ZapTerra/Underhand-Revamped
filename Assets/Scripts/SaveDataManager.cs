@@ -10,6 +10,7 @@ public class SaveDataManager : MonoBehaviour
     public Toggle voiceToggle;
     public ToggleSpriteSwap voiceSpriteToggle;
     void Start(){
+        PlayerPrefs.SetInt("God of Beginnings", 1);
         //When the toggles are "Off" the player sees "On" because their default state is on.
         AudioListener.pause = PlayerPrefs.GetInt("Audio Off") == 1;
         Debug.Log(PlayerPrefs.GetInt("Audio Off"));

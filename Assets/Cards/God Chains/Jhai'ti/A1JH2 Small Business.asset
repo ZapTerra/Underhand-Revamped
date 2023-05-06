@@ -21,7 +21,7 @@ MonoBehaviour:
     cost: 
     reward: 020000000200000002000000
     result: Insert 'Start a Tea Shop'
-    radioVoice: {fileID: 0}
+    radioVoice: {fileID: 8300000, guid: 7402b092f21a47f45821ded8882b0964, type: 3}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -37,7 +37,7 @@ MonoBehaviour:
     cost: 0200000002000000
     reward: 0600000006000000
     result: Insert the next Prosperity event into deck
-    radioVoice: {fileID: 0}
+    radioVoice: {fileID: 8300000, guid: 7402b092f21a47f45821ded8882b0964, type: 3}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -53,7 +53,7 @@ MonoBehaviour:
     cost: 02000000
     reward: 06000000
     result: Insert the next Prosperity event into deck
-    radioVoice: {fileID: 0}
+    radioVoice: {fileID: 8300000, guid: 7402b092f21a47f45821ded8882b0964, type: 3}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}

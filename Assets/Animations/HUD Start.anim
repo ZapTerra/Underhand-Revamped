@@ -290,7 +290,7 @@ AnimationClip:
     attribute: m_Enabled
     path: Canvas/Settings Icon
     classID: 114
-    script: {fileID: 11500000, guid: 216b1ea454b7e2d49946870fd3355efc, type: 3}
+    script: {fileID: 11500000, guid: 4e9235452d2c6f24f99f388978ac6e65, type: 3}
   m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
@@ -337,7 +337,7 @@ AnimationClip:
     - serializedVersion: 2
       path: 1773737409
       attribute: 3305885265
-      script: {fileID: 11500000, guid: 216b1ea454b7e2d49946870fd3355efc, type: 3}
+      script: {fileID: 11500000, guid: 4e9235452d2c6f24f99f388978ac6e65, type: 3}
       typeID: 114
       customType: 24
       isPPtrCurve: 0
@@ -782,7 +782,7 @@ AnimationClip:
     attribute: m_Enabled
     path: Canvas/Settings Icon
     classID: 114
-    script: {fileID: 11500000, guid: 216b1ea454b7e2d49946870fd3355efc, type: 3}
+    script: {fileID: 11500000, guid: 4e9235452d2c6f24f99f388978ac6e65, type: 3}
   m_EulerEditorCurves:
   - curve:
       serializedVersion: 2

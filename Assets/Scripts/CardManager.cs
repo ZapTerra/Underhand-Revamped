@@ -23,10 +23,12 @@ public class CardManager : MonoBehaviour
     public bool insertGodChains = true;
     public List<GodNameWrapper> tieredGodNames = new List<GodNameWrapper>();
     public List<Card> godChainBeginnings = new List<Card>();
+    public bool insertCrisisEvents = true;
     public Card desperateMeasures;
     public Card policeRaid;
     public Card greed;
     public GameObject eventCardPrefab;
+    public bool beginImmediately;
     public static int crisisImmunityFromForesight;
     private static bool attempedDesperateMeasuresInsert;
     private static bool attemptedPoliceRaidInsert;
@@ -49,12 +51,16 @@ public class CardManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //ZA
-        Time.timeScale = 0;
+        //This lets the tutorial skip past the blessings screen.
+        if(beginImmediately){
+            ResetTimeScaleAndBegin();
+        }
     }
 
     public void ResetTimeScaleAndBegin(){
-        //WARUDO
+        //WARUDO ゴ
+        //   ゴ
+        //ゴ
         List<Card> temp = new List<Card>(basicEvents);
         Random rnd = new Random();
 
@@ -113,7 +119,9 @@ public class CardManager : MonoBehaviour
     }
 
     void DrawCard(){
-        CheckCrisisEvents();
+        if(insertCrisisEvents){
+            CheckCrisisEvents();
+        }
         inspectorDeck = new List<Card>(deck);
         crisisImmunityFromForesight--;
         var card = Instantiate(eventCardPrefab);

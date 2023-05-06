@@ -21,6 +21,7 @@ MonoBehaviour:
     cost: 
     reward: 03000000
     result: 
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -28,12 +29,15 @@ MonoBehaviour:
       specialReward: {fileID: 0}
       useSpecialEffect: 0
       specialEffect: {fileID: 0}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
   option2:
     exists: 1
     description: Take him (and the milk)
     cost: 
     reward: 030000000400000006000000
     result: 
+    radioVoice: {fileID: 8300000, guid: e9514b4ff569e09419d5c521749ce08c, type: 3}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -41,12 +45,15 @@ MonoBehaviour:
       specialReward: {fileID: 0}
       useSpecialEffect: 0
       specialEffect: {fileID: 0}
+      usesCustomOption: 0
+      customOption: {fileID: 0}
   option3:
     exists: 1
     description: Convert him and take the milk
     cost: 02000000
     reward: 0100000003000000
     result: 
+    radioVoice: {fileID: 8300000, guid: e9514b4ff569e09419d5c521749ce08c, type: 3}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -54,3 +61,5 @@ MonoBehaviour:
       specialReward: {fileID: 0}
       useSpecialEffect: 0
       specialEffect: {fileID: 0}
+      usesCustomOption: 0
+      customOption: {fileID: 0}

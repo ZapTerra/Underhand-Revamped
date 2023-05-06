@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class WinLoseUI : MonoBehaviour
 {
-    public CanvasGroup win;
+    public CanvasGroup winCanvasGroup;
     public Button winContinue;
-    public CanvasGroup lose;
+    public CanvasGroup loseCanvasGroup;
     public Button lossContinue;
     // Start is called before the first frame update
     public void Win(){
@@ -21,23 +21,25 @@ public class WinLoseUI : MonoBehaviour
     }
 
     private IEnumerator FadeWin(){
-        win.alpha = 0;
+        winCanvasGroup.alpha = 0;
         winContinue.enabled = false;
-        while(win.alpha < 1){
-            win.alpha += Time.unscaledDeltaTime;
+        while(winCanvasGroup.alpha < 1){
+            winCanvasGroup.alpha += Time.unscaledDeltaTime;
             yield return new WaitForEndOfFrame();
         }
+        winCanvasGroup.enabled = false;
         winContinue.enabled = true;
     }
 
 
     private IEnumerator FadeLose(){
-        lose.alpha = 0;
+        loseCanvasGroup.alpha = 0;
         lossContinue.enabled = false;
-        while(lose.alpha < 1){
-            lose.alpha += Time.unscaledDeltaTime;
+        while(loseCanvasGroup.alpha < 1){
+            loseCanvasGroup.alpha += Time.unscaledDeltaTime;
             yield return new WaitForEndOfFrame();
         }
+        loseCanvasGroup.enabled = false;
         lossContinue.enabled = true;
     }
 

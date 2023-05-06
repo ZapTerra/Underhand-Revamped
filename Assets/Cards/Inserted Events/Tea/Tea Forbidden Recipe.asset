@@ -18,8 +18,8 @@ MonoBehaviour:
   option1:
     exists: 1
     description: Best not to drink this one
-    cost: 00000000
-    reward: 
+    cost: 
+    reward: 00000000
     result: 
     radioVoice: {fileID: 0}
     specialEffects:

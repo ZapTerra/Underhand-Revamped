@@ -21,6 +21,7 @@ MonoBehaviour:
     cost: 
     reward: 
     result: 
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 1
       specialCost: {fileID: 11400000, guid: 521dde077c2a2cf4fb644d0fd61ceceb, type: 2}
@@ -35,7 +36,8 @@ MonoBehaviour:
     description: Hire an exterminator
     cost: 0200000002000000
     reward: 
-    result: They will protect our food supply
+    result: They will protect our food supply (wip)
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -51,6 +53,7 @@ MonoBehaviour:
     cost: 050000000500000005000000
     reward: 
     result: 
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}

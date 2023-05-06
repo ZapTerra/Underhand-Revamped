@@ -21,6 +21,7 @@ MonoBehaviour:
     cost: 04000000
     reward: 0300000003000000030000000600000006000000
     result: Insert 'Red Dreams'
+    radioVoice: {fileID: 8300000, guid: 9c9eddc555089b2499b77e36d5907e7e, type: 3}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -36,6 +37,7 @@ MonoBehaviour:
     cost: 01000000
     reward: 03000000030000000300000006000000
     result: Insert 'Red Dreams'
+    radioVoice: {fileID: 8300000, guid: 9c9eddc555089b2499b77e36d5907e7e, type: 3}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -51,6 +53,7 @@ MonoBehaviour:
     cost: 
     reward: 
     result: You Lose
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}

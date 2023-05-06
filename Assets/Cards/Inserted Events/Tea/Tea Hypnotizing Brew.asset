@@ -37,7 +37,7 @@ MonoBehaviour:
     cost: 
     reward: 010000000100000006000000
     result: 
-    radioVoice: {fileID: 0}
+    radioVoice: {fileID: 8300000, guid: 8e3848783d7b37748bbdea1599e558af, type: 3}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}

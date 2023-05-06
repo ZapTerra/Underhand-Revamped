@@ -21,7 +21,7 @@ MonoBehaviour:
     cost: 
     reward: 
     result: Insert 'Storm'
-    radioVoice: {fileID: 0}
+    radioVoice: {fileID: 8300000, guid: 4960ad177ec392f40a91cb42225a4201, type: 3}
     specialEffects:
       useSpecialCost: 1
       specialCost: {fileID: 11400000, guid: d2de585a7338a5c4ba2eb39f066c377b, type: 2}

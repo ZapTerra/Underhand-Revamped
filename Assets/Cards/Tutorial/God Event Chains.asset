@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d007d0d8b16001a4f9a117a815a2f55d, type: 3}
-  m_Name: Foresight!
+  m_Name: God Event Chains
   m_EditorClassIdentifier: 
-  eventSprite: {fileID: -959568783, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
+  eventSprite: {fileID: -97124013, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
   weight: 10
-  recurring: 1
+  recurring: 0
   option1:
     exists: 0
     description: 
     cost: 
     reward: 
     result: 
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -32,17 +33,18 @@ MonoBehaviour:
       customOption: {fileID: 0}
   option2:
     exists: 1
-    description: Foresight
+    description: Summon a god to win the game
     cost: 
     reward: 
-    result: 
+    result: Insert 'Progression'
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
       useSpecialReward: 0
       specialReward: {fileID: 0}
       useSpecialEffect: 1
-      specialEffect: {fileID: 11400000, guid: 70ad54508667123469585cf4ba110e6b, type: 2}
+      specialEffect: {fileID: 11400000, guid: 53d413457170e0f4684b4b768f660ea6, type: 2}
       usesCustomOption: 0
       customOption: {fileID: 0}
   option3:
@@ -51,6 +53,7 @@ MonoBehaviour:
     cost: 
     reward: 
     result: 
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}

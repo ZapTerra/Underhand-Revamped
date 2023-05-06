@@ -20,7 +20,8 @@ MonoBehaviour:
     description: Hire a private doctor
     cost: 020000000200000002000000
     reward: 
-    result: She claims a permanent cure
+    result: She claims a permanent cure (wip)
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -35,7 +36,8 @@ MonoBehaviour:
     description: Hire a doctor in town
     cost: 0200000002000000
     reward: 06000000
-    result: She claims a permanent cure
+    result: She claims a permanent cure (wip)
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -51,6 +53,7 @@ MonoBehaviour:
     cost: 
     reward: 
     result: 
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 1
       specialCost: {fileID: 11400000, guid: 6a5741a438a9b9f45bfc48e588a41dcc, type: 2}

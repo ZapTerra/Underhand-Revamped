@@ -11,6 +11,7 @@ public class GalleryDisplayManager : MonoBehaviour
     public CanvasGroup galleryDisplayGroup;
     public Button exitButton;
     public ChangeColorOrSprite buttonGraphicModifier;
+    public Button galleryExitButton;
     public void OpenGallery(){
         StartCoroutine(FadeIn());
     }
@@ -34,10 +35,11 @@ public class GalleryDisplayManager : MonoBehaviour
     public IEnumerator FadeIn(){
         galleryDisplayGroup.alpha = 0;
         exitButton.enabled = false;
+        galleryExitButton.interactable = false;
         buttonGraphicModifier.enabled = false;
         GetComponent<GraphicRaycaster>().enabled = true;
         while(galleryDisplayGroup.alpha < 1){
-            galleryDisplayGroup.alpha += Time.deltaTime;
+            galleryDisplayGroup.alpha += Time.unscaledDeltaTime;
             yield return new WaitForEndOfFrame();
         }
         exitButton.enabled = true;
@@ -48,9 +50,10 @@ public class GalleryDisplayManager : MonoBehaviour
         exitButton.enabled = false;
         buttonGraphicModifier.enabled = false;
         while(galleryDisplayGroup.alpha > 0){
-            galleryDisplayGroup.alpha -= Time.deltaTime;
+            galleryDisplayGroup.alpha -= Time.unscaledDeltaTime;
             yield return new WaitForEndOfFrame();
         }
+        galleryExitButton.interactable = true;
         GetComponent<GraphicRaycaster>().enabled = false;
     }
 

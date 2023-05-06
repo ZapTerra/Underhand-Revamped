@@ -232,7 +232,7 @@ public class EventCard : MonoBehaviour
                     animator.SetBool("Discard", true);
                 }
                 if(choice.radioVoice != null){
-                    AudioSource.PlayClipAtPoint(choice.radioVoice, Vector3.zero);
+                    Radio.soundBytes.Add(choice.radioVoice);
                 }
             }else{
                 //LAUGH AT THE PLAYER (nicely)
@@ -254,7 +254,11 @@ public class EventCard : MonoBehaviour
         }else if(resourcesWillBurn){
             yield return new WaitForSeconds(BurnAnimationLength);
         }
-        FindObjectOfType<CrisisEventVisuals>().checkVisuals();
+        if(FindObjectOfType<CrisisEventVisuals>() != null){
+            FindObjectOfType<CrisisEventVisuals>().checkVisuals();
+        }else{
+            Debug.Log("No CrisisEventVisuals object found in the scene. HUD alerts will not appear.");
+        }
         animator.Play("RefoldCard");
     }
 
@@ -282,6 +286,9 @@ public class EventCard : MonoBehaviour
                 currentStackCount = 1;
             }
             InstantiateAppropriateIcon(re, holder, currentStackCount, cost, isCost);
+        }
+        if(cost.Count == 0){
+            Destroy(holder);
         }
     }
 

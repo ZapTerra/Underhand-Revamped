@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Win : CustomEvent {
     public string godName;
     public override void SpecialEffect(){
+        PlayerPrefs.SetInt("Won Last Game", 1);
         PlayerPrefs.SetInt(godName, PlayerPrefs.GetInt(godName) + 1);
         Debug.Log(PlayerPrefs.GetInt(godName));
         GalleryWinDisplay.win = godName;

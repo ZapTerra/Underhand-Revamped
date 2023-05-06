@@ -22,13 +22,6 @@ public class UnderhandButton : Button
 
     private void Update()
     {
-        // if(Time.timeScale == 0 && interactable){
-        //     interactable = false;
-        //     beganAsInteractable = true;
-        // }else if(Time.timeScale > 0 && !interactable && beganAsInteractable){
-        //     interactable = true;
-        // }
-
         if(Input.GetMouseButtonDown(0)){
             if(cursorWithinButton){
                 leavePressToSystem = true;
@@ -36,8 +29,8 @@ public class UnderhandButton : Button
         }
         if (Input.GetMouseButtonUp(0))
         {
-            Debug.Log(RectTransformUtility.RectangleContainsScreenPoint(transform as RectTransform, Camera.main.ScreenToWorldPoint(Input.mousePosition)));
-            if (RectTransformUtility.RectangleContainsScreenPoint(transform as RectTransform, Camera.main.ScreenToWorldPoint(Input.mousePosition)) && !leavePressToSystem && interactable)
+            //If the camera is rendering the layer this gameobject is on && the click is within the bounds of this button && other conditions are met
+            if (Camera.main.cullingMask == (Camera.main.cullingMask | (1 << gameObject.layer)) && RectTransformUtility.RectangleContainsScreenPoint(transform as RectTransform, Camera.main.ScreenToWorldPoint(Input.mousePosition)) && !leavePressToSystem && interactable)
             {
                 Debug.Log("Button clicked!");
                 onClick.Invoke();

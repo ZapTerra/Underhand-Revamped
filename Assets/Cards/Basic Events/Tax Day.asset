@@ -21,6 +21,7 @@ MonoBehaviour:
     cost: 0200000002000000
     reward: 
     result: 
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -36,6 +37,7 @@ MonoBehaviour:
     cost: 
     reward: 0600000006000000
     result: 
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -50,7 +52,8 @@ MonoBehaviour:
     description: Kidnap the tax collector
     cost: 
     reward: 04000000060000000600000006000000
-    result: Remove 'Tax Day' from the next deck
+    result: They won't bother us for a while (wip)
+    radioVoice: {fileID: 0}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}

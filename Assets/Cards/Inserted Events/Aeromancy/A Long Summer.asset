@@ -21,7 +21,7 @@ MonoBehaviour:
     cost: 
     reward: 0300000003000000
     result: Insert 'Drought'
-    radioVoice: {fileID: 0}
+    radioVoice: {fileID: 8300000, guid: 7e184f2a2fd7a3d4086dc787ed937a59, type: 3}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}
@@ -37,7 +37,7 @@ MonoBehaviour:
     cost: 05000000
     reward: 0300000003000000
     result: Insert 'Golden Sun'
-    radioVoice: {fileID: 0}
+    radioVoice: {fileID: 8300000, guid: ece63b998b796ad48ad876cc4568831b, type: 3}
     specialEffects:
       useSpecialCost: 0
       specialCost: {fileID: 0}

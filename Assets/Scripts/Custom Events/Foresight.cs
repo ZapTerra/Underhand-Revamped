@@ -9,7 +9,9 @@ public class Foresight : CustomEvent {
     public bool foresightWithDiscard;
     public GameObject revealedCard;
     public override void SpecialEffect(){
-        CardManager.crisisImmunityFromForesight = scryCount + 1;
+        //Community voted against this feature. It's still implemented, if you'd like to turn it on by uncommenting this line.
+        //Guarantees the future won't change once you've seen it.
+        //CardManager.crisisImmunityFromForesight = scryCount + 1;
         List<Card> foresight = new(CardManager.GetForesightCards(scryCount));
         FindObjectOfType<ForesightAnimationManager>().newForesight(foresight);
         int counter = 0;
