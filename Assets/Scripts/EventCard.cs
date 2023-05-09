@@ -12,7 +12,6 @@ public class EventCard : MonoBehaviour
 {
     public static bool choiceActivated;
 
-    public Card eventCard;
     public Card data;
     public Option choice1;
     public Option choice2;
@@ -21,9 +20,7 @@ public class EventCard : MonoBehaviour
     //To allow effects like Foresight to activate once the burn animation completes
     public float BurnAnimationLength;
     public Image cardImage;
-    public Image bg1;
-    public Image bg2;
-    public Image bg3;
+    public SpriteRenderer deckSprite;
     public GameObject costArray1;
     public GameObject costArray2;
     public GameObject costArray3;
@@ -47,6 +44,7 @@ public class EventCard : MonoBehaviour
     public Sprite expensiveChoice;
     public Sprite paidExpensiveChoice;
     public Sprite paidAvailableChoice;
+    public List<Sprite> deckSprites = new List<Sprite>();
     public Animator animator;
 
     private int checkResult = 0;
@@ -68,6 +66,7 @@ public class EventCard : MonoBehaviour
     
     public void populateCard(){
         cardImage.sprite = data.eventSprite;
+
         bool lose1 = false;
         bool lose2 = false;
         bool lose3 = false;
@@ -115,7 +114,7 @@ public class EventCard : MonoBehaviour
             checkResult = 0;
         }
 
-        //I have to include this if I want to stay true to the original game because of a ridiculous dev workaround    
+        //I have to include this if I want to stay true to the original game because of a ridiculous dev workaround
         if(data.option3.specialEffects.usesCustomOption){
             choice3 = data.option3.specialEffects.customOption.SpecialOption();
         }else{
@@ -180,7 +179,6 @@ public class EventCard : MonoBehaviour
 
     public void ActivateConsequences(Option choice){
         if(!choiceActivated && choice.exists){
-            //I don't know if the new<> is necessary, will look up when I have internet
             List<Resource> tempList = new List<Resource>(HandController.SortInput(HandController.placedFieldResources));
             List<Resource> costList = new List<Resource>(choice.cost);
             List<Resource> resourcesForSacrifice = new List<Resource>();
@@ -357,7 +355,46 @@ public class EventCard : MonoBehaviour
         }else{
             return 0;
         }
-    }  
+    }
+
+    //Yes, all of these are necessary for the fancy animations.
+    public void SetSpriteDeckNonzero(){
+        if(CardManager.deck.Count == 0){
+            deckSprite.sprite = deckSprites[1];
+        }else{
+            deckSprite.sprite = deckSprites[Mathf.Clamp(Mathf.CeilToInt((CardManager.deck.Count) / 3f), 0, deckSprites.Count - 1)];
+        }
+    }
+    public void SetSpriteDeck(){
+        deckSprite.sprite = deckSprites[Mathf.Clamp(Mathf.CeilToInt((CardManager.deck.Count) / 3f), 0, deckSprites.Count - 1)];
+    }
+    public void SetSpriteDiscard(){  
+        deckSprite.sprite = deckSprites[Mathf.Clamp(Mathf.CeilToInt((CardManager.discardCountBeforeDraw) / 3f), 0, deckSprites.Count - 1)];
+    }
+    public void SetSpriteDiscardPlusReshuffled(){
+        deckSprite.sprite = deckSprites[Mathf.Clamp(Mathf.CeilToInt((CardManager.discardCountBeforeDraw + 1) / 3f), 0, deckSprites.Count - 1)];
+    }
+    public void SetSpriteDiscardPlusInserts(){
+        deckSprite.sprite = deckSprites[Mathf.Clamp(Mathf.CeilToInt((CardManager.discardPile.Count) / 3f), 0, deckSprites.Count - 1)];
+    }
+
+    public void TryTutorialMessageDraw(){
+        Debug.Log("Attempted a tutorial overlay");
+        // && PlayerPrefs.GetInt(data.tutorialOverlay.playerPrefsNameDraw, 0) == 0
+        if(data.tutorialOverlay.overlayOnDraw){
+            PlayerPrefs.SetInt(data.tutorialOverlay.playerPrefsNameDraw, 1);
+            FindObjectOfType<ForesightAnimationManager>().newForesight(new List<Card>());
+            Instantiate(data.tutorialOverlay.drawOverlay, GameObject.FindWithTag("PauseOverlayCanvas").transform);
+        }
+    }
+    public void TryTutorialMessageUnfold(){
+        // && PlayerPrefs.GetInt(data.tutorialOverlay.playerPrefsNameUnfold, 0) == 0
+        if(data.tutorialOverlay.overlayOnUnfold){
+            PlayerPrefs.SetInt(data.tutorialOverlay.playerPrefsNameUnfold, 1);
+            FindObjectOfType<ForesightAnimationManager>().newForesight(new List<Card>());
+            Instantiate(data.tutorialOverlay.unfoldOverlay, GameObject.FindWithTag("PauseOverlayCanvas").transform);
+        }
+    }
 }
 
 [System.Serializable]
@@ -382,6 +419,16 @@ public class SpecialEffects {
     public CustomEvent specialEffect;
     public bool usesCustomOption;
     public CustomEvent customOption;
+}
+
+[System.Serializable]
+public class TutorialOverlay {
+    public string playerPrefsNameDraw;
+    public string playerPrefsNameUnfold;
+    public bool overlayOnDraw;
+    public GameObject drawOverlay;
+    public bool overlayOnUnfold;
+    public GameObject unfoldOverlay;
 }
 
 namespace Resources

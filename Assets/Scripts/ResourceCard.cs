@@ -16,11 +16,11 @@ public class ResourceCard : MonoBehaviour
     private Vector2 firstMousePos;
     private float movementLerp;
     public int creationBehavior;
+    private bool heldLock;
     
     private Vector3 startPosition;
     private float handRotationBeforeMoving;
     public bool reachedPosition;
-
     private LayerMask clickableLayers;
     private RaycastHit2D[] hits; //Change this number to however many selectable objects you think you'll have layered on top of eachother. This is for performance reasons.
     private float rayStart = -100; //Start Raycast from this Z-Coordinate
@@ -48,7 +48,7 @@ public class ResourceCard : MonoBehaviour
     }
 
     void OnMouseOver(){
-        if(((heldCard == null) || (heldCard.GetComponentInParent<Canvas>().sortingOrder < GetComponentInParent<Canvas>().sortingOrder)) && Input.GetMouseButton(0)){
+        if(((heldCard == null) || (heldCard.GetComponentInParent<Canvas>().sortingOrder < GetComponentInParent<Canvas>().sortingOrder)) && Input.GetMouseButton(0) && !heldLock){
             heldCard = gameObject;
             handRotationBeforeMoving = HandController.handRotation;
             lastMousePos = Input.mousePosition;
@@ -111,6 +111,14 @@ public class ResourceCard : MonoBehaviour
                 rot = handRotationAtX(Input.mousePosition.x);
             }
             HandController.handRotation = rot;
+        }
+    }
+
+    void LateUpdate(){
+        if(heldCard != null){
+            heldLock = true;
+        }else{
+            heldLock = false;
         }
     }
 

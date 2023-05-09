@@ -11,6 +11,9 @@ public class CrisisEventVisuals : MonoBehaviour
     public GameObject foodIndicator;
     public GameObject suspicionIndicator;
     public GameObject greedIndicator;
+    public GameObject foodTutorial;
+    public GameObject suspicionTutorial;
+    public GameObject greedTutorial;
     private bool foodAnimated;
     private bool suspicionAnimated;
     private bool greedAnimated;
@@ -29,6 +32,11 @@ public class CrisisEventVisuals : MonoBehaviour
     public void checkVisuals(){
         if(HandController.playerResources.Count(x => MatchResource.OneToTwoNoRelic(x, Resource.Food)) == 0){
             if(!foodAnimated){
+                if(PlayerPrefs.GetInt("desperatemeasures") == 0){
+                    PlayerPrefs.SetInt("desperatemeasures", 1);
+                    FindObjectOfType<ForesightAnimationManager>().newForesight(new List<Card>());
+                    Instantiate(foodTutorial, GameObject.FindWithTag("PauseOverlayCanvas").transform);
+                }
                 StartCoroutine(Blinky(foodIndicator));
                 foodAnimated = true;
             }
@@ -38,6 +46,11 @@ public class CrisisEventVisuals : MonoBehaviour
         }
         if(HandController.playerResources.Count(x => MatchResource.OneToTwoNoRelic(x, Resource.Suspicion)) > 4){
             if(!suspicionAnimated){
+                if(PlayerPrefs.GetInt("policeraid") == 0){
+                    PlayerPrefs.SetInt("policeraid", 1);
+                    FindObjectOfType<ForesightAnimationManager>().newForesight(new List<Card>());
+                    Instantiate(suspicionTutorial, GameObject.FindWithTag("PauseOverlayCanvas").transform);
+                }
                 StartCoroutine(Blinky(suspicionIndicator));
                 suspicionAnimated = true;
             }
@@ -47,6 +60,11 @@ public class CrisisEventVisuals : MonoBehaviour
         }
         if(HandController.playerResources.Count > 15){
             if(!greedAnimated){
+                if(PlayerPrefs.GetInt("greed") == 0){
+                    PlayerPrefs.SetInt("greed", 1);
+                    FindObjectOfType<ForesightAnimationManager>().newForesight(new List<Card>());
+                    Instantiate(greedTutorial, GameObject.FindWithTag("PauseOverlayCanvas").transform);
+                }
                 StartCoroutine(Blinky(greedIndicator));
                 greedAnimated = true;
             }

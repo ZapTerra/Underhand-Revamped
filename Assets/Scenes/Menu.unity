@@ -454,6 +454,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: 6fc3f1cd5a4e5af4a824f9c75e60ce3f, type: 3}
   spriteActive: {fileID: 21300000, guid: 80429442b1cd3af438382e5948a16cd2, type: 3}
   targetImage: {fileID: 292767454}
+  disableInFrozenTime: 0
 --- !u!114 &292767454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -593,6 +594,9 @@ MonoBehaviour:
   audioSpriteToggle: {fileID: 781474010}
   voiceToggle: {fileID: 1033194785}
   voiceSpriteToggle: {fileID: 1033194781}
+  music: {fileID: 1047909641}
+  fireplace: {fileID: 0}
+  radio: {fileID: 0}
 --- !u!4 &296376062
 Transform:
   m_ObjectHideFlags: 0
@@ -704,6 +708,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: 030460d582c94f74495af1645252b425, type: 3}
   spriteActive: {fileID: 21300000, guid: 2f0b335fefe477c4eace5b32a0dd80c9, type: 3}
   targetImage: {fileID: 407988338}
+  disableInFrozenTime: 0
 --- !u!114 &407988342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,6 +971,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 225919095}
+  disableInFrozenTime: 0
 --- !u!1 &499547411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,6 +1237,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 1418342472}
+  disableInFrozenTime: 0
 --- !u!1 &755777509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,6 +1425,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 781474011}
+  disableInFrozenTime: 0
 --- !u!114 &781474014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1465,18 +1473,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.AudioListener, UnityEngine
-        m_MethodName: set_pause
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 296376061}
         m_TargetAssemblyTypeName: SaveDataManager, Assembly-CSharp
         m_MethodName: ToggleAudio
@@ -1710,6 +1706,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: 42334a15ef9b2d74aa3b0c7bfec9fa2e, type: 3}
   spriteActive: {fileID: 21300000, guid: 5bed91dcbddee544bb898394d39ab59d, type: 3}
   targetImage: {fileID: 882223980}
+  disableInFrozenTime: 0
 --- !u!114 &882223983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1877,6 +1874,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 1033194782}
+  disableInFrozenTime: 0
 --- !u!114 &1033194785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2076,7 +2074,7 @@ GameObject:
   - component: {fileID: 1074684722}
   - component: {fileID: 1074684726}
   - component: {fileID: 1074684725}
-  - component: {fileID: 1074684724}
+  - component: {fileID: 1074684727}
   - component: {fileID: 1074684723}
   m_Layer: 0
   m_Name: Reset Tutorial
@@ -2123,50 +2121,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 1074684725}
---- !u!114 &1074684724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1074684721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
-    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1419000900}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
+  disableInFrozenTime: 0
 --- !u!114 &1074684725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2205,6 +2160,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074684721}
   m_CullTransparentMesh: 1
+--- !u!114 &1074684727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074684721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9235452d2c6f24f99f388978ac6e65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1074684725}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 296376061}
+        m_TargetAssemblyTypeName: SaveDataManager, Assembly-CSharp
+        m_MethodName: ResetTutorial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1137427587
 GameObject:
   m_ObjectHideFlags: 0
@@ -2595,6 +2606,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: e545fb41ecb6e27498b07ad9ec5d9a09, type: 3}
   spriteActive: {fileID: 21300000, guid: 1d5690a5771a27846bdd2588ba1a9f76, type: 3}
   targetImage: {fileID: 1184673962}
+  disableInFrozenTime: 0
 --- !u!114 &1184673966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2785,6 +2797,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: f4ec1613901914946b3147625caaf03c, type: 3}
   spriteActive: {fileID: 21300000, guid: bb21def657e716a49b7bef1f861ac3d4, type: 3}
   targetImage: {fileID: 1229170453}
+  disableInFrozenTime: 0
 --- !u!114 &1229170453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3085,6 +3098,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 1613679003}
+  disableInFrozenTime: 0
 --- !u!1 &1320516182
 GameObject:
   m_ObjectHideFlags: 0
@@ -3143,6 +3157,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: b21ad5399e93e654fb0da999657307a4, type: 3}
   spriteActive: {fileID: 21300000, guid: 9e133e6f6f926b446a94b1ec6ee4028c, type: 3}
   targetImage: {fileID: 1320516187}
+  disableInFrozenTime: 0
 --- !u!114 &1320516187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3600,7 +3615,7 @@ GameObject:
   - component: {fileID: 1419000897}
   - component: {fileID: 1419000901}
   - component: {fileID: 1419000900}
-  - component: {fileID: 1419000899}
+  - component: {fileID: 1419000902}
   - component: {fileID: 1419000898}
   m_Layer: 0
   m_Name: Reset Game
@@ -3626,7 +3641,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: -261}
+  m_AnchoredPosition: {x: 0, y: -261}
   m_SizeDelta: {x: 318, y: 159}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1419000898
@@ -3647,50 +3662,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 1419000900}
---- !u!114 &1419000899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419000896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
-    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1419000900}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
+  disableInFrozenTime: 0
 --- !u!114 &1419000900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3729,6 +3701,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419000896}
   m_CullTransparentMesh: 1
+--- !u!114 &1419000902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419000896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9235452d2c6f24f99f388978ac6e65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1419000900}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 296376061}
+        m_TargetAssemblyTypeName: SaveDataManager, Assembly-CSharp
+        m_MethodName: ResetSaveData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1433886337
 GameObject:
   m_ObjectHideFlags: 0
@@ -4398,6 +4426,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 273206604}
+  disableInFrozenTime: 0
 --- !u!1 &1732531489
 GameObject:
   m_ObjectHideFlags: 0
@@ -4578,6 +4607,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: d9250e407cb088342a1c37f56dc82372, type: 3}
   spriteActive: {fileID: 21300000, guid: 896834c88cbff0a4786fcf637a594b80, type: 3}
   targetImage: {fileID: 1748234436}
+  disableInFrozenTime: 0
 --- !u!114 &1748234440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4647,6 +4677,7 @@ GameObject:
   - component: {fileID: 1938235535}
   - component: {fileID: 1938235537}
   - component: {fileID: 1938235538}
+  - component: {fileID: 1938235539}
   m_Layer: 0
   m_Name: Wiindigoo
   m_TagString: Untagged
@@ -4823,6 +4854,23 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 2144968002}
+  disableInFrozenTime: 0
+--- !u!114 &1938235539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938235532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb64bee23538b44f96bf7659dc6a455, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  godName: Wiindigoo
+  graphic: {fileID: 1938235535}
+  highlight: {fileID: 2144968000}
+  button: {fileID: 1938235537}
 --- !u!1 &2065536810
 GameObject:
   m_ObjectHideFlags: 0
@@ -5029,6 +5077,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 1219970310}
+  disableInFrozenTime: 0
 --- !u!1 &2075063129
 GameObject:
   m_ObjectHideFlags: 0
@@ -5087,6 +5136,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: 11abb87e5afc5694a8c8a654bb43ee0a, type: 3}
   spriteActive: {fileID: 21300000, guid: eeb7d7c1ca0f6424b9720ae192ef2401, type: 3}
   targetImage: {fileID: 2075063133}
+  disableInFrozenTime: 0
 --- !u!114 &2075063133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5560,6 +5610,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 2123403281}
+  disableInFrozenTime: 0
 --- !u!1 &2144968000
 GameObject:
   m_ObjectHideFlags: 0

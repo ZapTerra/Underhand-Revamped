@@ -28,11 +28,14 @@ public class CardManager : MonoBehaviour
     public Card policeRaid;
     public Card greed;
     public GameObject eventCardPrefab;
+    public GameObject shuffleOverlay;
     public bool beginImmediately;
+    private bool firstShuffle = true;
     public static int crisisImmunityFromForesight;
     private static bool attempedDesperateMeasuresInsert;
     private static bool attemptedPoliceRaidInsert;
     private static bool attemptedGreedInsert;
+    public static int discardCountBeforeDraw;
     public static List<int> foresightDiscardIndices = new();
     
 
@@ -109,16 +112,13 @@ public class CardManager : MonoBehaviour
             if(deck.Count > 0){
                 DrawCard();
             }else{
-                Debug.Log("Reshuffling");
-                deck = new List<Card>(ReshuffleDeck());
-                nextDeckTopCards = new();
-                discardPile.Clear();
-                DrawCard();
+                StartCoroutine(VisualsForReshuffle());
             }
         }
     }
 
     void DrawCard(){
+        discardCountBeforeDraw = discardPile.Count;
         if(insertCrisisEvents){
             CheckCrisisEvents();
         }
@@ -132,6 +132,24 @@ public class CardManager : MonoBehaviour
             }
             deck.RemoveAt(0);
         }
+    }
+
+    public IEnumerator VisualsForReshuffle(){
+        Debug.Log("Reshuffling");
+
+        if(!firstShuffle){
+            shuffleOverlay.SetActive(true);
+            FindObjectOfType<AudioManager>().Play("Shuffle");
+            yield return new WaitForSeconds(3f);
+            shuffleOverlay.SetActive(false);
+        }else{
+            firstShuffle = false;
+        }
+
+        deck = new List<Card>(ReshuffleDeck());
+        nextDeckTopCards = new();
+        discardPile.Clear();
+        DrawCard();
     }
 
     public static List<Card> ReshuffleDeck(){

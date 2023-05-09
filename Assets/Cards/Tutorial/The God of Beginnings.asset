@@ -63,3 +63,10 @@ MonoBehaviour:
       specialEffect: {fileID: 0}
       usesCustomOption: 0
       customOption: {fileID: 0}
+  tutorialOverlay:
+    playerPrefsNameDraw: 
+    playerPrefsNameUnfold: summongod
+    overlayOnDraw: 0
+    drawOverlay: {fileID: 0}
+    overlayOnUnfold: 1
+    unfoldOverlay: {fileID: 6764387053824598649, guid: 3e910a490fd4da44bb1313beb0e13630, type: 3}

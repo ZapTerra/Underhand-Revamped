@@ -12,5 +12,6 @@ public class Win : CustomEvent {
         Debug.Log(PlayerPrefs.GetInt(godName));
         GalleryWinDisplay.win = godName;
         FindObjectOfType<WinLoseUI>().Win();
+        FindObjectOfType<Radio>().radioPlayer.Pause();
     }
 }

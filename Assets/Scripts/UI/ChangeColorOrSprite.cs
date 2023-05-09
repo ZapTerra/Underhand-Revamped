@@ -8,19 +8,24 @@ public class ChangeColorOrSprite : MonoBehaviour, IPointerEnterHandler, IPointer
     public bool swapToActiveUseCurrentDefault;
     public Sprite spriteDefault, spriteActive;
     public Image targetImage;
+    public bool disableInFrozenTime;
     private bool highlight;
 
     public void OnPointerEnter(PointerEventData eventData){
-        targetImage.color = colorActive;
-        if(spriteActive != null){
-            highlight = true;
+        if(Time.timeScale > 0 || !disableInFrozenTime){
+            targetImage.color = colorActive;
+            if(spriteActive != null){
+                highlight = true;
+            }
         }
     }
     void LateUpdate(){
         if(highlight){
-            targetImage.sprite = spriteActive;
-            if(swapToActiveUseCurrentDefault && spriteDefault == null){
-                spriteDefault = targetImage.sprite;
+            if(Time.timeScale > 0 || !disableInFrozenTime){
+                targetImage.sprite = spriteActive;
+                if(swapToActiveUseCurrentDefault && spriteDefault == null){
+                    spriteDefault = targetImage.sprite;
+                }
             }
         }
     }
@@ -31,8 +36,10 @@ public class ChangeColorOrSprite : MonoBehaviour, IPointerEnterHandler, IPointer
         }
     }
     public void OnPointerExit(PointerEventData eventData){
-        SetDefault();
-        highlight = false;
+        if(Time.timeScale > 0 || !disableInFrozenTime){
+            SetDefault();
+            highlight = false;
+        }
     }
     void OnDisable(){
         SetDefault();

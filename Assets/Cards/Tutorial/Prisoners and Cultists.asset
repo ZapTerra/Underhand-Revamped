@@ -35,7 +35,7 @@ MonoBehaviour:
     exists: 1
     description: This symbol means a mix of prisoners and cultists can be used
     cost: 0500000005000000
-    reward: 
+    reward: 03000000
     result: 
     radioVoice: {fileID: 0}
     specialEffects:

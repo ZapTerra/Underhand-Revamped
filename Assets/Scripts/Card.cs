@@ -9,4 +9,5 @@ public class Card : ScriptableObject {
     public Option option1;
     public Option option2;
     public Option option3;
+    public TutorialOverlay tutorialOverlay;
 }

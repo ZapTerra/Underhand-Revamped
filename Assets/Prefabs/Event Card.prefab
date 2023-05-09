@@ -432,6 +432,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 1253641990, guid: b191893a981146643bba7d4c022f4ef6, type: 3}
   targetImage: {fileID: 5649200257172428041}
+  disableInFrozenTime: 0
 --- !u!1 &5649200257283017253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1790,7 +1791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f19b49c26f3f724683bfe5cd256c8d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventCard: {fileID: 0}
   data: {fileID: 0}
   choice1:
     exists: 0
@@ -1842,9 +1842,7 @@ MonoBehaviour:
       customOption: {fileID: 0}
   BurnAnimationLength: 3
   cardImage: {fileID: 5649200259039767397}
-  bg1: {fileID: 0}
-  bg2: {fileID: 0}
-  bg3: {fileID: 0}
+  deckSprite: {fileID: 2400029752091159854}
   costArray1: {fileID: 5649200259097238082}
   costArray2: {fileID: 5649200258490364136}
   costArray3: {fileID: 5649200257777498379}
@@ -1866,6 +1864,13 @@ MonoBehaviour:
   expensiveChoice: {fileID: 1405120739, guid: b191893a981146643bba7d4c022f4ef6, type: 3}
   paidExpensiveChoice: {fileID: 767066170, guid: b191893a981146643bba7d4c022f4ef6, type: 3}
   paidAvailableChoice: {fileID: 767066170, guid: b191893a981146643bba7d4c022f4ef6, type: 3}
+  deckSprites:
+  - {fileID: 0}
+  - {fileID: -1970092013, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
+  - {fileID: -1701664730, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
+  - {fileID: 36475945, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
+  - {fileID: 1433513518, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
+  - {fileID: 942688604, guid: 969123e9f1e465c4191ff6bfef99bf05, type: 3}
   animator: {fileID: 5649200257999018893}
 --- !u!1 &5649200258085313443
 GameObject:
@@ -3315,6 +3320,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 5649200259039767397}
+  disableInFrozenTime: 1
 --- !u!1 &5649200259042294793
 GameObject:
   m_ObjectHideFlags: 0
@@ -3705,6 +3711,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 1253641990, guid: b191893a981146643bba7d4c022f4ef6, type: 3}
   targetImage: {fileID: 5649200259106602203}
+  disableInFrozenTime: 0
 --- !u!1 &5649200259195664708
 GameObject:
   m_ObjectHideFlags: 0
@@ -3857,6 +3864,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 1253641990, guid: b191893a981146643bba7d4c022f4ef6, type: 3}
   targetImage: {fileID: 5649200259195664714}
+  disableInFrozenTime: 0
 --- !u!1 &6918047489275875590
 GameObject:
   m_ObjectHideFlags: 0

@@ -63,3 +63,10 @@ MonoBehaviour:
       specialEffect: {fileID: 0}
       usesCustomOption: 0
       customOption: {fileID: 0}
+  tutorialOverlay:
+    playerPrefsNameDraw: 
+    playerPrefsNameUnfold: foresight
+    overlayOnDraw: 0
+    drawOverlay: {fileID: 0}
+    overlayOnUnfold: 1
+    unfoldOverlay: {fileID: 2781681717070476340, guid: 33759f665e5a1414794a2934abecd78f, type: 3}

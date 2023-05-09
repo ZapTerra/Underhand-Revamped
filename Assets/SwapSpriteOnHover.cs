@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 
-//This script is used in the tutorial for when the player's mouse hovers over the sigil.
+//This script is used in the tutorial when the player's mouse hovers over the sigil.
 
 
 
@@ -13,13 +13,11 @@ public class SwapSpriteOnHover : MonoBehaviour
 {
     public Animator animator;
     public Sprite hoverSprite;
-    void OnMouseOver(){
-        animator.enabled = false;
-        GetComponent<SpriteRenderer>().sprite = hoverSprite;
+    void Update(){
+        if(ResourceCard.pickedUpCard == false){
+            animator.SetBool("highlight", false);
+        }else{
+            animator.SetBool("highlight", true);
+        }
     }
-
-    void OnMouseExit(){
-        animator.enabled = true;
-    }
-
 }

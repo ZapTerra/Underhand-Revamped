@@ -1115,6 +1115,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: d9250e407cb088342a1c37f56dc82372, type: 3}
   spriteActive: {fileID: 21300000, guid: 896834c88cbff0a4786fcf637a594b80, type: 3}
   targetImage: {fileID: 331745417}
+  disableInFrozenTime: 0
 --- !u!114 &331745417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1400,6 +1401,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: 428b8e81d46fdcc4f99c29e69542be77, type: 3}
   spriteActive: {fileID: 21300000, guid: 09bc25012125b9c48a150bfb623cebaf, type: 3}
   targetImage: {fileID: 353084880}
+  disableInFrozenTime: 0
 --- !u!114 &353084883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1468,7 +1470,7 @@ GameObject:
   - component: {fileID: 362426487}
   - component: {fileID: 362426486}
   m_Layer: 26
-  m_Name: Gallery
+  m_Name: Gallery (Object names matter! (for god display after a win))
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1837,6 +1839,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 1024990771}
+  disableInFrozenTime: 0
 --- !u!114 &395621770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2271,6 +2274,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 419658580}
+  disableInFrozenTime: 0
 --- !u!114 &431383058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2531,6 +2535,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: 42334a15ef9b2d74aa3b0c7bfec9fa2e, type: 3}
   spriteActive: {fileID: 21300000, guid: 5bed91dcbddee544bb898394d39ab59d, type: 3}
   targetImage: {fileID: 433717352}
+  disableInFrozenTime: 0
 --- !u!114 &433717352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2857,6 +2862,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 1540540562}
+  disableInFrozenTime: 0
 --- !u!114 &529533526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3096,6 +3102,7 @@ GameObject:
   - component: {fileID: 572041226}
   - component: {fileID: 572041224}
   - component: {fileID: 572041228}
+  - component: {fileID: 572041229}
   m_Layer: 5
   m_Name: Settings Icon
   m_TagString: Untagged
@@ -3141,6 +3148,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: c9cf61b05dce0864c93b196002d3a115, type: 3}
   spriteActive: {fileID: 21300000, guid: 0d40508eb9bd44f47a917643a71f580c, type: 3}
   targetImage: {fileID: 572041226}
+  disableInFrozenTime: 0
 --- !u!114 &572041226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3235,6 +3243,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &572041229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572041222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cfc94c19ef1c524a875695c5e25e1ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetButton: {fileID: 572041228}
+  keepFrozenOnUnpause: 0
 --- !u!1 &612658515
 GameObject:
   m_ObjectHideFlags: 0
@@ -3668,6 +3690,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 427247940}
+  disableInFrozenTime: 0
 --- !u!114 &729673577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4117,6 +4140,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: 3ac138eaba521ee4bbcea80dad9489db, type: 3}
   spriteActive: {fileID: 21300000, guid: 1cef3b22137a8bf469a91f022e391de3, type: 3}
   targetImage: {fileID: 804383515}
+  disableInFrozenTime: 0
 --- !u!114 &804383515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4446,6 +4470,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: 11abb87e5afc5694a8c8a654bb43ee0a, type: 3}
   spriteActive: {fileID: 21300000, guid: eeb7d7c1ca0f6424b9720ae192ef2401, type: 3}
   targetImage: {fileID: 849210851}
+  disableInFrozenTime: 0
 --- !u!114 &849210851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4771,6 +4796,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: 6fc3f1cd5a4e5af4a824f9c75e60ce3f, type: 3}
   spriteActive: {fileID: 21300000, guid: 80429442b1cd3af438382e5948a16cd2, type: 3}
   targetImage: {fileID: 955244139}
+  disableInFrozenTime: 0
 --- !u!114 &955244139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5420,6 +5446,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 424250040}
+  disableInFrozenTime: 0
 --- !u!114 &1069759347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5664,6 +5691,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: 030460d582c94f74495af1645252b425, type: 3}
   spriteActive: {fileID: 21300000, guid: 2f0b335fefe477c4eace5b32a0dd80c9, type: 3}
   targetImage: {fileID: 1101207633}
+  disableInFrozenTime: 0
 --- !u!114 &1101207633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6060,6 +6088,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 1264499941}
+  disableInFrozenTime: 0
 --- !u!114 &1264499941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6237,6 +6266,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 1274121849}
+  disableInFrozenTime: 0
 --- !u!114 &1274121849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6533,6 +6563,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 1351821880}
+  disableInFrozenTime: 0
 --- !u!114 &1351821879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7445,6 +7476,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: b5f6261db84592641af4cedaef207a07, type: 3}
   spriteActive: {fileID: 21300000, guid: 66b3408755069d740bb32a41275cf125, type: 3}
   targetImage: {fileID: 1614905951}
+  disableInFrozenTime: 0
 --- !u!114 &1614905954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7559,6 +7591,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 1638591041}
+  disableInFrozenTime: 0
 --- !u!114 &1638591040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7700,6 +7733,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 1113424379}
+  disableInFrozenTime: 0
 --- !u!114 &1692609148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8128,7 +8162,7 @@ MonoBehaviour:
   galleryDisplayGroup: {fileID: 1813278721}
   exitButton: {fileID: 433717350}
   buttonGraphicModifier: {fileID: 433717351}
-  galleryExitButton: {fileID: 0}
+  galleryExitButton: {fileID: 331745415}
 --- !u!225 &1813278721
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8159,7 +8193,7 @@ MonoBehaviour:
   galleryDisplayGroup: {fileID: 1813278721}
   exitButton: {fileID: 433717350}
   buttonGraphicModifier: {fileID: 433717351}
-  galleryExitButton: {fileID: 0}
+  galleryExitButton: {fileID: 331745415}
 --- !u!114 &1813278723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8251,7 +8285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fancyScrollSpeed: 250
-  inspectorInputResources: 
+  inspectorInputResources: 03000000
   cardPrefab: {fileID: 8713616321454191050, guid: b9fcd90f2f595744892f6a656d2776a1, type: 3}
 --- !u!4 &1828032748
 Transform:
@@ -8549,6 +8583,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: 2e02fb65662b41e49b7713fd3d4929c1, type: 3}
   spriteActive: {fileID: 21300000, guid: 9f99625af7dd1264b977b9a622cf0117, type: 3}
   targetImage: {fileID: 1992319596}
+  disableInFrozenTime: 0
 --- !u!114 &1992319596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8794,6 +8829,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 0}
   spriteActive: {fileID: 0}
   targetImage: {fileID: 92398011}
+  disableInFrozenTime: 0
 --- !u!114 &2026681237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9066,6 +9102,10 @@ PrefabInstance:
     - target: {fileID: 2708279691209276260, guid: 6dec891dcc4116d42b1f59847a40c5d4, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708279691209276260, guid: 6dec891dcc4116d42b1f59847a40c5d4, type: 3}
+      propertyPath: m_TagString
+      value: PauseOverlayCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 4471319869077392014, guid: 6dec891dcc4116d42b1f59847a40c5d4, type: 3}
       propertyPath: m_UiScaleMode
@@ -9451,6 +9491,7 @@ MonoBehaviour:
   spriteDefault: {fileID: 21300000, guid: 42334a15ef9b2d74aa3b0c7bfec9fa2e, type: 3}
   spriteActive: {fileID: 21300000, guid: 5bed91dcbddee544bb898394d39ab59d, type: 3}
   targetImage: {fileID: 7883025073513533530}
+  disableInFrozenTime: 0
 --- !u!114 &7883025073513533532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9491,7 +9532,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 7883025073513533530}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:

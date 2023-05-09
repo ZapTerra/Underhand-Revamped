@@ -28,7 +28,7 @@ MonoBehaviour:
       useSpecialReward: 0
       specialReward: {fileID: 0}
       useSpecialEffect: 1
-      specialEffect: {fileID: 11400000, guid: 20acffaf8ef799a49be23c8a7c59ceab, type: 2}
+      specialEffect: {fileID: 11400000, guid: 03fd450ae27e97f4092f2a57cce8d357, type: 2}
       usesCustomOption: 0
       customOption: {fileID: 0}
   option2:

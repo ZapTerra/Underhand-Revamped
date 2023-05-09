@@ -8,5 +8,6 @@ public class Lose : CustomEvent {
     public override void SpecialEffect(){
         PlayerPrefs.SetInt("Won Last Game", 0);
         FindObjectOfType<WinLoseUI>().Lose();
+        FindObjectOfType<Radio>().radioPlayer.Pause();
     }
 }
